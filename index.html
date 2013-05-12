@@ -38,6 +38,8 @@
             type="text/javascript" charset="utf-8"></script>
     <script src="resources/javascripts/jquery.bubblepopup.v2.3.1.min.js"
             type="text/javascript" charset="utf-8"></script>
+    <script src="resources/javascripts/javano.js"
+            type="text/javascript" charset="utf-8"></script>
 
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -73,13 +75,12 @@
 <div id="mainmenu">
     <div class="wrapper">
         <div class="horiz">
-            <a href="/">Kommende møter</a>
-            <a href="/tidligere">Tidligere møter</a>
+            <a href="/index.html">Forsiden</a>
+            <a href="/index.html?page=regioner">Hvor er vi?</a>
             <a href="http://www.javazone.no">JavaZone</a>
-            <a href="/bidra">Bli med og bidra</a>
-            <a href="/foredragsholdere">Foredragsholdere</a>
-            <a href="/medlemskap">Bli medlem</a>
-            <a href="/om-javabin">Om javaBin</a>
+            <a href="/index.html?page=bidra">Bli med og bidra til javaBin</a>
+            <a href="/index.html?page=medlemskap">Medlemskap</a>
+            <a href="/index.html?page=om">Om javaBin</a>
         </div>
     </div>
 </div>
@@ -90,6 +91,7 @@
     <div class="container_12">
         <div class="clear"></div>
 
+        <div id="pageContent"/>
 
         <div class="clear"></div>
 
@@ -121,7 +123,7 @@
             <img src="resources/images/email.png" height="50" width="50" alt="Kontakt javaBin via epost."
                  class="mailbutton"/>
         </a>
-        <a href="https://github.com/javaBin/javabin-hjemmeside">
+        <a href="https://github.com/javaBin">
             <img src="resources/images/octocat.png" height="40" width="40" class="githubbutton"
                  alt="Bidra med funksjonalitet eller rapporter bugs på GitHub"/>
         </a>
@@ -134,4 +136,22 @@
 
 
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var page = getURLParameter("page");
+        if (page == "null") {
+            page = "home";
+        }
+
+        $.ajax({
+            url: "pages/" + page + ".html",
+            type: "GET",
+            success: function (data) {
+                $("#pageContent").html(data);
+            }
+        });
+
+    })
+</script>
 </html>

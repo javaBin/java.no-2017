@@ -610,3 +610,24 @@ div.region-container {
     font-weight: bold;
     text-align: center;
 }
+
+.region-page .intro {
+
+    padding: 10px;
+}
+
+.region-page .details {
+
+    padding: 10px;
+}
+
+.region-page .map {
+
+    padding: 10px;
+}
+
+.region-page .row-fluid {
+
+    margin-bottom: 10px;
+}
+

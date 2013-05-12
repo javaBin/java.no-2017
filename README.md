@@ -23,6 +23,6 @@ Problemer med cross-site scripting i Chrome
 
 Får du problemer med at Chrome ikke tillater HTML-filene å laste via ajax, så kan du starte opp browseren med følgende parameter:
 
- --allow-file-access-from-files
+    --allow-file-access-from-files
 
 Det skal fikse problemet.

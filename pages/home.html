@@ -36,37 +36,48 @@
 <script type="text/javascript">
 
     var url = "http://api.meetup.com/2/events?group_id=7480032%2C8449272%2C7371452%2C4060032%2C10847532%2C1764379&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&sig_id=14499833&sig=5cd7131eecfb2f8b4581762dd8c58c77c266d23d";
-    $.getJSON(url, function (data) {
+    $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "jsonp",
+        success: function (data) {
 
-        var eventsList = "";
+            var eventsList = "";
 
-        if (data.results.length == 0) {
+            if (data.results.length == 0) {
 
-            eventsList = '<div class="span12 nomeetups">Vi har for tiden ingen planlagte meetups.</div>';
-        } else {
+                eventsList = '<div class="span12 nomeetups">Vi har for tiden ingen planlagte meetups.</div>';
+            } else {
 
-            $.each(data.results, function (i, item) {
-                eventsList = eventsList +
-                        '<div class="row meetup bg' + (i % 2) + '">' +
-                        '   <div class="span1">' +
-                        '       <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=' + item.venue.city + ',Norway&zoom=10&size=75x75&sensor=false"/>' +
-                        '   </div>' +
-                        '   <div class="span9">' +
-                        '       <a class="eventlink" href="' + item.event_url + '">' + item.name + '</a><br/>' +
-                        '       <div class="venue">' + item.venue.name + ', ' + item.venue.city + '</div>' +
-                        '       <div class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</div>' +
-                        '   </div>' +
-                        '   <div class="span2 participants">' +
-                        '       <span class="yes">' + item.yes_rsvp_count + '</span><br/>' +
-                        '       <span class="small">deltakere</span>' +
-                        '   </div>' +
-                        '</div>\n';
+                $.each(data.results, function (i, item) {
+                    eventsList = eventsList +
+                            '<div class="row meetup bg' + (i % 2) + '">' +
+                            '   <div class="span1">' +
+                            '       <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=' + item.venue.city + ',Norway&zoom=10&size=75x75&sensor=false"/>' +
+                            '   </div>' +
+                            '   <div class="span9">' +
+                            '       <a class="eventlink" href="' + item.event_url + '">' + item.name + '</a><br/>' +
+                            '       <div class="venue">' + item.venue.name + ', ' + item.venue.city + '</div>' +
+                            '       <div class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</div>' +
+                            '   </div>' +
+                            '   <div class="span2 participants">' +
+                            '       <span class="yes">' + item.yes_rsvp_count + '</span><br/>' +
+                            '       <span class="small">deltakere</span>' +
+                            '   </div>' +
+                            '</div>\n';
 
-            });
+                });
 
-        }
+            }
 
-        $("#meetupslist").html(eventsList);
+            $("#meetupslist").html(eventsList);
+
+        },
+        beforeSend: setHeaders
     });
+
+    function setHeaders(xhr) {
+        xhr.setRequestHeader("Origin", "http://java.no");
+    }
 
 </script>

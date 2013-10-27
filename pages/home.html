@@ -1,14 +1,16 @@
 <div class="container">
 
-    <div class="hero-unit">
-        <h1>Velkommen til javaBin!</h1>
-        <br/>
-
-        <p>java.no er hjemmesiden til Java Brukergruppen i Norge. Her finner du informasjon om hvem vi er, hvor vi
-            holder til og hvordan du kan være med - enten bare som deltaker, eller dersom du ønsker å bidra. Sjekk
-            menyen over eller linkene under for mer informasjon!</p>
-    </div>
     <div class="row">
+        <div class="span12">
+            <h1>Velkommen til javaBin!</h1>
+
+            <p>java.no er hjemmesiden til Java Brukergruppen i Norge. Her finner du informasjon om hvem vi er, hvor vi
+                holder til og hvordan du kan være med - enten bare som deltaker, eller dersom du ønsker å bidra. Sjekk
+                menyen over eller linkene under for mer informasjon!</p>
+        </div>
+    </div>
+
+    <div class="row quicklinks">
         <div class="span4 front-infobox">
             <a href="index.html?page=regioner">Hvor er vi?</a>
         </div>
@@ -19,6 +21,54 @@
             <a href="index.html?page=om">Om javaBin</a>
         </div>
     </div>
+    <div class="row">
+        <div class="span12 meetups">
+
+            <h3>Våre kommende arrangementer</h3>
+
+            <div id="meetupslist"/>
+
+        </div>
+
+    </div>
 </div>
 
-<div style="height: 100px;"/>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        var url = "http://api.meetup.com/2/events?group_id=7480032%2C8449272%2C7371452%2C4060032%2C10847532%2C1764379&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&sig_id=14499833&sig=5cd7131eecfb2f8b4581762dd8c58c77c266d23d";
+        $.getJSON(url, function (data) {
+
+            var eventsList = "";
+
+            if (data.results.length == 0) {
+
+                eventsList = '<div class="span12 nomeetups">Vi har for tiden ingen planlagte meetups.</div>';
+            } else {
+
+                $.each(data.results, function (i, item) {
+                    eventsList = eventsList +
+                            '<div class="row meetup bg' + (i % 2) + '">' +
+                            '   <div class="span1">' +
+                            '       <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=' + item.venue.city + ',Norway&zoom=10&size=75x75&sensor=false"/>' +
+                            '   </div>' +
+                            '   <div class="span9">' +
+                            '       <a class="eventlink" href="' + item.event_url + '">' + item.name + '</a><br/>' +
+                            '       <div class="venue">' + item.venue.name + ', ' + item.venue.city + '</div>' +
+                            '       <div class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</div>' +
+                            '   </div>' +
+                            '   <div class="span2 participants">' +
+                            '       <span class="yes">' + item.yes_rsvp_count + '</span><br/>' +
+                            '       <span class="small">deltakere</span>' +
+                            '   </div>' +
+                            '</div>\n';
+
+                });
+
+            }
+
+            $("#meetupslist").html(eventsList);
+        });
+    });
+
+</script>

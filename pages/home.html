@@ -50,6 +50,12 @@
             } else {
 
                 $.each(data.results, function (i, item) {
+
+                    var remainingSeats = "";
+                    if (item.rsvp_limit) {
+                        remainingSeats = '<br/><span class="small">' + (item.rsvp_limit - item.yes_rsvp_count) + ' ledige plasser</span>';
+                    }
+
                     eventsList = eventsList +
                             '<div class="row meetup bg' + (i % 2) + '">' +
                             '   <div class="span1">' +
@@ -63,6 +69,7 @@
                             '   <div class="span2 participants">' +
                             '       <span class="yes">' + item.yes_rsvp_count + '</span><br/>' +
                             '       <span class="small">påmeldte</span>' +
+                            remainingSeats +
                             '   </div>' +
                             '</div>\n';
 

@@ -676,13 +676,17 @@ div.region-container {
 
 }
 
-
-
 .meetups .bg0 {
     background-color: #fafafa;
 }
 
 .meetups .bg1 {
     background-color: #ffffff;
+}
+
+.meetup-loading {
+
+    width: 100%;
+    text-align: center;
 }
 

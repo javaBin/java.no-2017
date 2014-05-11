@@ -72,6 +72,7 @@
                             '       <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=' + venueCity + ',Norway&zoom=10&size=75x75&sensor=false"/>' +
                             '   </div>' +
                             '   <div class="col-md-9">' +
+                            '       <div class="region">' + item.group.name + '</div>' +
                             '       <a class="eventlink" href="' + item.event_url + '">' + item.name + '</a><br/>' +
                             '       <div class="venue">' + venueString + '</div>' +
                             '       <div class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</div>' +

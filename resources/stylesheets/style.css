@@ -661,6 +661,10 @@ div.region-container {
     font-weight: bold;
 }
 
+.meetup .region {
+    font-size: 10px;
+}
+
 .meetup .participants {
     text-align: center;
     padding-top: 5px;

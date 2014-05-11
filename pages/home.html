@@ -56,14 +56,17 @@
                         remainingSeats = '<br/><span class="small">' + (item.rsvp_limit - item.yes_rsvp_count) + ' ledige plasser</span>';
                     }
 
+                    var venueCity = typeof item.venue !== "undefined" ? item.venue.city : null;
+                    var venueName = typeof item.venue !== "undefined" ? item.venue.name : null;
+                    var venueString = venueCity === null || venueName === null ? "Foreløpig ingen lokasjon." : venueName + ', ' + venueCity;
                     eventsList = eventsList +
                             '<div class="row meetup bg' + (i % 2) + '">' +
                             '   <div class="span1">' +
-                            '       <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=' + item.venue.city + ',Norway&zoom=10&size=75x75&sensor=false"/>' +
+                            '       <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=' + venueCity + ',Norway&zoom=10&size=75x75&sensor=false"/>' +
                             '   </div>' +
                             '   <div class="span9">' +
                             '       <a class="eventlink" href="' + item.event_url + '">' + item.name + '</a><br/>' +
-                            '       <div class="venue">' + item.venue.name + ', ' + item.venue.city + '</div>' +
+                            '       <div class="venue">' + venueString + '</div>' +
                             '       <div class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</div>' +
                             '   </div>' +
                             '   <div class="span2 participants">' +

@@ -1,3 +1,2 @@
-_site/
-*.iml
-/.idea/
+_site
+.sass-cache

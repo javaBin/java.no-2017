@@ -1,5 +1,5 @@
 # Site settings
-title: javaBin &emdash; Hjemmesiden til Java Brukerforeningen i Norge
+title: javaBin &mdash; Hjemmesiden til Java Brukerforeningen i Norge
 email: aktive@java.no
 description: > # this means to ignore newlines until "baseurl:"
     javaBin, Java brukerforeningen i Norge, 
@@ -10,3 +10,5 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed

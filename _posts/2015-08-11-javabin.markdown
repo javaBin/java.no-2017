@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title:  "javaBin"
 date:   2015-08-11 19:23
-categories: javaBin
+tags:   javaBin
 ---
 
  

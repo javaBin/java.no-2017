@@ -6,5 +6,62 @@ header {
 }
 
 nav {
+  display: block;
+  position: sticky;
+  top: 0;
+  height: 5em;
+}
 
+article {
+  &:nth-child(odd) {
+    background: cornflowerblue;
+  }
+
+  &:nth-child(even) {
+    background: beige;
+  }
+}
+
+
+.flex-box {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  section {
+    display: flex;
+    flex-shrink: 0;
+    align-content: center;
+    width: 20em;
+
+    img {
+      width: 5em;
+      height: 5em;
+
+      margin: 1em;
+
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+}
+
+footer {
+  .github {
+
+  }
+
+  .facebook {
+
+  }
+
+  .instagram {
+
+  }
+
+  .twitter {
+
+  }
 }

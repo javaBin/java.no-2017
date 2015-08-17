@@ -7,28 +7,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                {% for category in site.tags %}
-                <li><a href="#{{ category }}">{{ category }}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
     </header>
     <main>
-        {% for page in site.pages %}
-            <section>
-                {{ page.content }}
-            </section>
-        {% endfor %}
+        {{ content }}
     </main>
     <footer>
         <ul>
-            <li><a href="#">github</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Linked-In</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://github.com/javaBin" class="github">github</a></li>
+            <li><a href="https://twitter.com/javaBin" class="twitter">Twitter</a></li>
+            <li><a href="https://instagram.com/javabin/" class="instagram">Instagram</a></li>
+            <li><a href="https://www.facebook.com/javabin" class="facebook">Facebook</a></li>
         </ul>
     </footer>
 </body>

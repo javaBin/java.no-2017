@@ -1,8 +1,17 @@
 ---
-layout: page
-title:  "javaBin"
+title:  javaBin
 date:   2015-08-11 19:23
-tags:   javaBin
+index:  1
 ---
 
  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat blandit massa at faucibus. Pellentesque ullamcorper at dolor eget auctor. Proin ut tempus enim. Nam vel ultricies magna. In quis nunc nec ex interdum pretium. Proin vel bibendum nulla, euismod bibendum enim. Pellentesque in nisi varius magna placerat rhoncus vitae non mi. Duis porttitor orci velit, vel ornare nulla lobortis vel. Morbi quis posuere nulla. Praesent rhoncus augue sed tortor blandit, nec euismod eros bibendum. Fusce eros mauris, porta non efficitur a, finibus et ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+Suspendisse viverra velit vitae urna iaculis, sed interdum lorem lobortis. Sed a risus ornare, tristique nibh vel, dapibus libero. Sed ligula quam, blandit eget facilisis ut, vehicula eget ante. Etiam congue aliquet dignissim. Quisque tortor dui, tincidunt quis rhoncus nec, sagittis sed elit. Nullam hendrerit risus sed metus pulvinar aliquam. Sed id elit in mauris cursus lacinia vitae non nibh. Nam fringilla magna sed sapien consectetur, in vestibulum nisl pulvinar. Phasellus sit amet tortor lacus. Proin nec ipsum tempor, vehicula dolor non, scelerisque nunc. Quisque non ex ac mi euismod interdum eget eget mauris. Etiam tincidunt mauris nisl. Cras vel condimentum erat, et ornare dolor. Proin eget nibh dignissim ipsum congue elementum dictum at erat.
+
+Etiam pretium lorem quis felis elementum efficitur. Nam justo augue, fermentum finibus consectetur sit amet, viverra laoreet enim. Sed aliquam tincidunt mi, et varius augue consequat sit amet. Nullam blandit ipsum id nibh semper imperdiet. Donec convallis pretium diam, et ullamcorper magna. Morbi ullamcorper at diam ut tempus. Aenean vulputate, nunc eget ultricies luctus, libero purus pellentesque ante, eu maximus diam urna ultrices dolor. Suspendisse potenti. Integer sit amet interdum arcu. Duis purus tellus, facilisis eget lorem vitae, cursus bibendum urna. Sed leo eros, dictum et vestibulum eget, congue sit amet augue. Fusce tempus viverra dapibus. Nam sodales vehicula dolor et dictum.
+
+Duis nibh enim, tincidunt a lacus eu, viverra mollis orci. Proin vel lectus eget nunc accumsan congue a ut quam. Ut volutpat non diam in consectetur. Nam vehicula elit a nisi consectetur tincidunt. Donec bibendum neque id arcu placerat, eget convallis odio euismod. Vestibulum ornare orci feugiat elit consectetur, eget lobortis dolor ultricies. Nulla eu erat auctor, aliquet velit sit amet, accumsan erat. Praesent mauris odio, ultrices ut mi ut, ornare aliquam ex. Vestibulum lacinia, risus vel venenatis pellentesque, leo velit imperdiet erat, sed tristique odio orci id lectus. Mauris vitae velit in ligula congue semper et pulvinar risus. Nunc scelerisque sodales erat, sit amet pharetra augue sodales vel. Sed egestas leo nec consectetur aliquet.
+
+Pellentesque ornare libero a orci rutrum, quis eleifend enim pellentesque. Morbi lobortis purus vitae justo convallis blandit. Nulla ac tellus magna. Aliquam aliquam nulla vel orci convallis tincidunt. Fusce eget finibus nunc, at blandit turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies lacus nisl, at facilisis nisl varius sed. Nullam tincidunt justo nunc, at efficitur ante feugiat ut. Nam eu arcu malesuada felis porttitor vestibulum. Duis scelerisque tellus erat, sed molestie arcu sagittis sed. Vestibulum lacinia auctor urna, nec aliquam elit auctor eget. Nulla gravida metus ac purus rhoncus egestas.
+

@@ -15,3 +15,8 @@ Fil og mappestrukturen som er i bruk, er standard Jekyll-struktur.
 * Utvikle et godt design
 * Finne gode bilder
 * Sette opp en fargepalett
+
+
+## Generering av sider
+Sidene blir automatisk generert på GitHub, men lokalt på maskinen brukes
+*jekyll serve*

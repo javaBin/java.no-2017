@@ -1,18 +1,62 @@
 ---
 ---
 
-header {
+$pagewidth: 85%;
+$logo: url("/img/JavaDukeFY14_Scientist_full_small.png");
 
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-  display: block;
+header {
+  display: flex;
   position: sticky;
   top: 0;
-  height: 5em;
+  width: $pagewidth;
+  min-width: 60em;
+  margin: 0 auto;
+  padding: 0;
+
+  img {
+    height: 10em;
+    width: 10em;
+  }
+
+  h1 {
+    text-align: center;
+    align-self: center;
+  }
+}
+
+nav, footer {
+  padding: 0;
+  margin: 0;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+
+    li {
+      padding: 0.5em;
+      margin: 0.5em;
+    }
+  }
 }
 
 article {
+  width: $pagewidth;
+  min-width: 60em;
+
+  margin: 1em auto;
+  padding: 1em;
+
+
   &:nth-child(odd) {
     background: cornflowerblue;
   }
@@ -20,8 +64,21 @@ article {
   &:nth-child(even) {
     background: beige;
   }
-}
 
+  &:first-child {
+    margin-top: 0em;
+  }
+
+  &:last-child {
+    margin-bottom: 0em;
+  }
+
+  h1::after {
+    content: attr(data-icon);
+    width: 3em;
+    height: 3em;
+  }
+}
 
 .flex-box {
   display: flex;
@@ -32,9 +89,9 @@ article {
 
   section {
     display: flex;
-    flex-shrink: 0;
+    justify-content: flex-start;
     align-content: center;
-    width: 20em;
+    flex-shrink: 0;
 
     img {
       width: 5em;
@@ -49,19 +106,34 @@ article {
 }
 
 footer {
-  .github {
+  a {
+    &:before {
+      font-family: 'FontAwesome';
+      margin-right: 0.3em;
+    }
 
-  }
+    &.github {
+      &:before {
+        content: "\f09b";
+      }
+    }
 
-  .facebook {
+    &.facebook {
+      &:before {
+        content: "\f230";
+      }
+    }
 
-  }
+    &.instagram {
+      &:before {
+        content: "\f16d";
+      }
+    }
 
-  .instagram {
-
-  }
-
-  .twitter {
-
+    &.twitter {
+      &:before {
+        content: "\f099";
+      }
+    }
   }
 }

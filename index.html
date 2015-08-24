@@ -1,7 +1,21 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="{{% site.baseurl %}}/css/style.css"/>
 
+    <title>{{ site.title }}</title>
+</head>
+<body>
+
+<header>
+    <img src="/img/JavaDukeFY14_Scientist_full_small.png"/>
+
+    <h1>javaBin</h1>
+</header>
 <nav>
     <ul>
         {% assign posts = site.posts | sort:"index" %}
@@ -15,7 +29,17 @@ layout: default
 {% assign posts = site.posts | sort:"index" %}
 {% for post in posts %}
 <article>
-    <h1 id="{{ post.title }}">{{ post.title }}</h1>
+    <h1 id="{{ post.title }}" data-icon="/img/JavaDukeFY14_Scientist_full_small.png">{{ post.title }}</h1>
     {{ post.content }}
 </article>
 {% endfor %}
+<footer>
+    <ul>
+        <li><a href="https://github.com/javaBin" class="github">github</a></li>
+        <li><a href="https://twitter.com/javaBin" class="twitter">Twitter</a></li>
+        <li><a href="https://instagram.com/javabin/" class="instagram">Instagram</a></li>
+        <li><a href="https://www.facebook.com/javabin" class="facebook">Facebook</a></li>
+    </ul>
+</footer>
+</body>
+</html>

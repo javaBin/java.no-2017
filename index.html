@@ -10,26 +10,34 @@
     <title>{{ site.title }}</title>
 </head>
 <body>
-
 <header>
-    <img src="/img/JavaDukeFY14_Scientist_full_small.png"/>
+    <hgroup>
+        <h1>javaBin</h1>
 
-    <h1>javaBin</h1>
+        <h2>Javabrukerforeningen i Norge</h2>
+    </hgroup>
+    <nav>
+        <ul>
+            {% assign posts = site.posts | sort:"index" %}
+
+            {% for post in posts %}
+            <li><a href="#{{ post.cssId }}">{{ post.title }}</a></li>
+            {% endfor %}
+            <li><a href="http://www.teknologihuset.no">Teknologihuset</a></li>
+            <li><a href="http://www.javazone.no">JavaZone</a></li>
+        </ul>
+    </nav>
 </header>
-<nav>
-    <ul>
-        {% assign posts = site.posts | sort:"index" %}
-
-        {% for post in posts %}
-        <li><a href="#{{ post.title }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
-</nav>
 
 {% assign posts = site.posts | sort:"index" %}
 {% for post in posts %}
-<article>
-    <h1 id="{{ post.title }}" data-icon="/img/JavaDukeFY14_Scientist_full_small.png">{{ post.title }}</h1>
+<article id="{{ post.cssId }}">
+    <hgroup>
+        <h1 data-icon="/img/JavaDukeFY14_Scientist_full_small.png">{{ post.title }}</h1>
+        {% if post.image %}
+        <img data-src="{{ post.image }}" src="{{ post.image }}"/>
+        {% endif %}
+    </hgroup>
     {{ post.content }}
 </article>
 {% endfor %}
@@ -41,5 +49,6 @@
         <li><a href="https://www.facebook.com/javabin" class="facebook">Facebook</a></li>
     </ul>
 </footer>
+<script src="js/better-details-polyfill.js"></script>
 </body>
 </html>

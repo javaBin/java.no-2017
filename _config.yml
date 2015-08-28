@@ -1,8 +1,8 @@
 # Site settings
-title: javaBin &mdash; Hjemmesiden til Java Brukerforeningen i Norge
+title: javaBin &mdash; Hjemmesiden til Javabrukerforeningen i Norge
 email: aktive@java.no
 description: > # this means to ignore newlines until "baseurl:"
-    javaBin, Java brukerforeningen i Norge, 
+    javaBin, Javabrukerforeningen i Norge,
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://java.no" # the base hostname & protocol for your site
 twitter_username: javabin

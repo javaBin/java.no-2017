@@ -1,19 +1,57 @@
 ---
-title:  Regioner
+title:  Hvor er vi?
+cssId:  regioner
 date:   2015-08-12 01:29
 index:  2
+image:  /img/kart-norge.png
 ---
-<ul>
-    <li><a href="#bergen">Bergen</a></li>
-    <li><a href="#oslo">Oslo</a></li>
-    <li><a href="#stavanger">Stavanger</a></li>
-    <li><a href="#sørlandet">Sørlandet</a></li>
-    <li><a href="#trondheim">Trondheim</a></li>
-    <li><a href="#vestfold">Vestfold</a></li>
-</ul>
 
-<h2 id="bergen">Bergen</h2>
-<h2 id="oslo">Oslo</h2>
-<h2 id="stavanger">Stavanger</h2>
-<h2 id="sørlandet">Sørlandet</h2>
-<h2 id="vestfold">Vestfold</h2>
+<!--
+<ul>
+    {% assign regions = site.data.data.regions | sort:"region" %}
+
+    {% for region in regions %}
+    {% assign index = index | plus: 1 %}
+    <li><a href="#region-{{ index }}">{{ region.region }}</a></li>
+    {% endfor %}
+</ul>
+-->
+
+
+{% assign index = 0 %}
+{% for region in regions %}
+{% assign index = index | plus: 1 %}
+
+<!--<input type="radio" name="regioner" id="region-{{ index }}" />
+<label for="region-{{ index }}">{{ region.region }}</label>-->
+<details>
+    <summary>{{ region.region }}</summary>
+    <section>
+        <div>
+            <p>{{ region.description }}</p>
+            <address>
+                <p><strong>Når:</strong> {{ region.when }}</p>
+
+                <p><strong>Hvor:</strong> {{ region.where }}</p>
+            </address>
+            <p>Informasjon om fagkvelder og påmelding finner du på <a
+                    href="http://www.meetup.com/{{ region.meetupUrl }}">javaBin {{ region.region }}s gruppe på
+                Meetup.com</a></p>
+        </div>
+        {% if region.maps %}
+        <figure>
+            <!--        <picture>
+                        <sourcet srcset="https://maps.googleapis.com/maps/api/staticmap?center={{region.maps}}&zoom=15&size=640x640&markers=color:red|{{region.maps}}, https://maps.googleapis.com/maps/api/staticmap?center={{region.maps}}&zoom=15&size=640x640&scale=2&markers=color:red|{{region.maps}} 2x" />
+                        <sourcet srcset="https://maps.googleapis.com/maps/api/staticmap?center={{region.maps}}&zoom=15&size=320x320&markers=color:red|{{region.maps}}, https://maps.googleapis.com/maps/api/staticmap?center={{region.maps}}&zoom=15&size=320x320&scale=2&markers=color:red|{{region.maps}} 2x" />
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?center={{region.maps}}&zoom=15&size=260x260&markers=color:red|{{region.maps}}" alt=""/>
+                    </picture>-->
+            <iframe frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed?pb={{ region.maps }}">
+            </iframe>
+            <figcaption>Kart over javaBin {{ region.region }}</figcaption>
+        </figure>
+
+        {% endif %}
+    </section>
+</details>
+{% endfor %}

@@ -2,7 +2,65 @@
 ---
 
 $pagewidth: 85%;
+$minwidth: 40em;
 $logo: url("/img/JavaDukeFY14_Scientist_full_small.png");
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($arg) {
+  -ms-flex: $arg;
+  -moz-box-flex: $arg;
+  -webkit-flex: $arg;
+  flex: $arg;
+}
+
+@mixin flex-flow($arg) {
+  -ms-flex-flow: $arg;
+  -moz-flex-flow: $arg;
+  -webkit-flex-flow: $arg;
+  flex-flow: $arg;
+}
+
+@mixin justify-content($arg) {
+  -ms-justify-content: $arg;
+  -moz-justify-content: $arg;
+  -webkit-justify-content: $arg;
+  justify-content: $arg;
+}
+
+@mixin justify-self($arg) {
+  -ms-justify-self: $arg;
+  -moz-justify-self: $arg;
+  -webkit-justify-self: $arg;
+  justify-self: $arg;
+}
+
+@mixin align-content($arg) {
+  -ms-align-content: $arg;
+  -moz-align-content: $arg;
+  -webkit-align-content: $arg;
+  align-content: $arg;
+}
+
+@mixin align-items($arg) {
+  -ms-align-items: $arg;
+  -moz-align-items: $arg;
+  -webkit-align-items: $arg;
+  align-items: $arg;
+}
+
+* {
+  box-sizing: border-box;
+  /*margin: 0;
+  padding: 0;*/
+  //font-size: 8px;
+}
 
 html, body {
   position: relative;
@@ -10,52 +68,68 @@ html, body {
   padding: 0;
 }
 
-header {
-  display: flex;
-  position: sticky;
-  top: 0;
-  width: $pagewidth;
-  min-width: 60em;
-  margin: 0 auto;
-  padding: 0;
-
-  img {
-    height: 10em;
-    width: 10em;
-  }
-
-  h1 {
-    text-align: center;
-    align-self: center;
-  }
-}
-
 nav, footer {
   padding: 0;
   margin: 0;
 
   ul {
-    display: flex;
+    @include flexbox;
     list-style: none;
     padding: 0;
     margin: 0;
-    align-content: center;
-    justify-content: center;
+
+    @include align-content(center);
+    @include justify-content(center);
 
     li {
+      display: block;
       padding: 0.5em;
       margin: 0.5em;
     }
   }
 }
 
+header {
+  width: $pagewidth;
+  min-width: $minwidth;
+
+  margin: 0 auto;
+  padding: 0;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  transition: all 0.5s;
+
+  background: rgba(1, 1, 1, 0.5);
+
+  hgroup {
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      &:before {
+        content: '-';
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
 article {
   width: $pagewidth;
-  min-width: 60em;
+  min-width: $minwidth;
 
-  margin: 1em auto;
-  padding: 1em;
+  margin: 4rem auto;
+  padding: 1rem;
 
+  box-shadow: 0 0 1rem 0 lightgray;
 
   &:nth-child(odd) {
     background: cornflowerblue;
@@ -73,43 +147,144 @@ article {
     margin-bottom: 0em;
   }
 
-  h1::after {
-    content: attr(data-icon);
-    width: 3em;
-    height: 3em;
-  }
-}
+  hgroup {
+    @include flexbox;
 
-.flex-box {
-  display: flex;
-  justify-content: flex-start;
-  align-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
+    @include flex-flow(row nowrap);
+    @include align-items(center);
 
-  section {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-shrink: 0;
+    height: 4em;
+    background: lightblue;
+    margin: -1rem -1rem 2rem;
+    padding: 0;
+    box-shadow: 0rem 0.2rem 0.5rem 0 lightgray;
+
+    h1 {
+      @include flex(auto);
+      margin: 0;
+      padding: 0 1em;
+      color: white;
+    }
 
     img {
-      width: 5em;
-      height: 5em;
+      height: 6em;
+      width: 6em;
 
-      margin: 1em;
+      @include justify-self(flex-end);
 
-      object-fit: cover;
       border-radius: 100%;
+
+      padding: 0.2em;
+      border: solid thick white;
+      background: blue;
+      margin-right: 3em;
+      object-fit: contain;
+    }
+  }
+
+  .flex-box {
+    @include flexbox;
+
+    @include flex-flow(row wrap);
+    @include justify-content(space-between);
+
+    section {
+      @include flexbox;
+
+      width: 17em;
+
+      //margin: 0.5em 0;
+      @include align-items(center);
+
+      h1, p {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 5em;
+        height: 5em;
+
+        margin: 1em;
+        padding: 0;
+
+        object-fit: cover;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &#regioner {
+    //    position: relative;
+
+    details {
+      position: relative;
+      margin: 0;
+      padding: 0;
+
+      summary {
+        font-weight: bolder;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        display: block;
+
+        background: lightcyan;
+        padding: 1rem;
+        margin: 0;
+
+        box-shadow: 0rem 0.5rem 1rem -0.5rem black;
+      }
+
+      section {
+        @include flexbox;
+
+        width: 97.5%;
+        margin: 0 auto;
+        padding: 2em;
+
+        background: lightgray;
+
+        @include flex-flow(row nowrap);
+        @include justify-content(space-between);
+
+        figure {
+          position: relative;
+          padding: 1em;
+          margin: 0.5em;
+
+          background: gray;
+          border: solid thin black;
+
+          -webkit-transform: rotate(5deg);
+          -moz-transform: rotate(5deg);
+          -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+
+          min-width: 300px;
+
+          iframe {
+            width: 100%;
+            height: 260px;
+          }
+
+          figcaption {
+            padding: 0.5em;
+          }
+        }
+      }
     }
   }
 }
 
 footer {
   a {
+    text-decoration: none;
+    font-size: 1rem;
+
     &:before {
-      font-family: 'FontAwesome';
+      font-family: fontawesome;
       margin-right: 0.3em;
+      color: #000;
     }
 
     &.github {

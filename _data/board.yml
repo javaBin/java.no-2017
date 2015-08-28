@@ -47,3 +47,59 @@ members:
     twitter:
     linkedin:
     github:
+
+  - name: Soft kitty
+    role: Leder
+    img:  https://placekitten.com/300/300?image=9
+    region: Oslo
+    twitter:
+    linkedin:
+    github:
+
+  - name: Warm kitty
+    role: Økonomiansvarlig
+    img:  https://placekitten.com/300/300?image=8
+    region: Oslo
+    twitter:
+    linkedin:
+    github:
+
+  - name: Little ball of fur
+    role: JavaZone-leder
+    img:  https://placekitten.com/300/300?image=1
+    region: Oslo
+    twitter:
+    linkedin:
+    github:
+
+  - name: Happy kitty
+    role: Styremedlem
+    img:  https://placekitten.com/300/300?image=10
+    region: Bergen
+    twitter:
+    linkedin:
+    github:
+
+  - name: Sleepy kitty
+    role: Styremedlem
+    img:  https://placekitten.com/300/300?image=15
+    region: Sørlandet
+    twitter:
+    linkedin:
+    github:
+
+  - name: Purr, purr, purr
+    role: Styremedlem
+    img:  https://placekitten.com/300/300?image=14
+    region: Vestfold
+    twitter:
+    linkedin:
+    github:
+
+  - name: Purr, purr, purr
+    role: Styremedlem
+    img:  https://placekitten.com/300/300?image=14
+    region: Vestfold
+    twitter:
+    linkedin:
+    github:

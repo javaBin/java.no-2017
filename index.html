@@ -23,10 +23,12 @@
             {% for post in posts %}
             <li><a href="#{{ post.cssId }}">{{ post.title }}</a></li>
             {% endfor %}
-            <li><a href="http://www.teknologihuset.no">Teknologihuset</a></li>
-            <li><a href="http://www.javazone.no">JavaZone</a></li>
         </ul>
     </nav>
+    <menu>
+        <li><a href="http://www.teknologihuset.no">Teknologihuset</a></li>
+        <li><a href="http://www.javazone.no">JavaZone</a></li>
+    </menu>
 </header>
 
 {% assign posts = site.posts | sort:"index" %}

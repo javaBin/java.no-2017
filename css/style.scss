@@ -5,6 +5,8 @@ $pagewidth: 85%;
 $minwidth: 40em;
 $logo: url("/img/JavaDukeFY14_Scientist_full_small.png");
 
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+
 @mixin flexbox {
   display: -webkit-box;
   display: -moz-box;
@@ -25,6 +27,13 @@ $logo: url("/img/JavaDukeFY14_Scientist_full_small.png");
   -moz-flex-flow: $arg;
   -webkit-flex-flow: $arg;
   flex-flow: $arg;
+}
+
+@mixin flex-order($arg) {
+  -moz-order: $arg;
+  -ms-flex-order: $arg;
+  -webkit-order: $arg;
+  order: $arg;
 }
 
 @mixin justify-content($arg) {
@@ -68,7 +77,7 @@ html, body {
   padding: 0;
 }
 
-nav, footer {
+nav, footer{
   padding: 0;
   margin: 0;
 
@@ -90,23 +99,37 @@ nav, footer {
 }
 
 header {
+  @include flexbox;
+
+  @include align-content(center);
+  @include flex-flow(row nowrap);
+  @include justify-content(space-between);
+
   width: $pagewidth;
   min-width: $minwidth;
 
   margin: 0 auto;
-  padding: 0;
+  padding: 1em;
 
+  position: fixed;
   position: -webkit-sticky;
   position: sticky;
+
   top: 0;
 
   transition: all 0.5s;
 
-  background: rgba(1, 1, 1, 0.5);
+  background: rgba(255, 255, 255, 0.85);
 
   hgroup {
+    @include flex-order(2);
+    @include justify-self(center);
+    @include flex(2);
+
     margin: 0;
     padding: 0;
+
+    text-align: center;
 
     h1 {
       margin: 0;
@@ -114,10 +137,40 @@ header {
     }
 
     h2 {
+      margin: 0;
+      padding: 0;
+      font-size: 1em;
       &:before {
         content: '-';
         margin-right: 0.5em;
       }
+    }
+  }
+
+  nav {
+    @include flexbox;
+    @include flex-order(1);
+    @include justify-self(flex-start);
+    @include flex-flow(row wrap);
+    @include flex(1);
+  }
+
+  menu {
+    @include flexbox;
+
+    @include justify-content(space-between);
+    @include flex-order(3);
+    @include justify-self(flex-end);
+    @include flex(1);
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 0.5em;
+      margin: 0.5em;
     }
   }
 }
@@ -139,12 +192,12 @@ article {
     background: beige;
   }
 
-  &:first-child {
-    margin-top: 0em;
+  &:first-of-type {
+    margin-top: 1rem;
   }
 
-  &:last-child {
-    margin-bottom: 0em;
+  &:last-of-type {
+    margin-bottom: 1rem;
   }
 
   hgroup {
@@ -191,19 +244,22 @@ article {
     section {
       @include flexbox;
 
-      width: 17em;
+      width: 17rem;
 
       //margin: 0.5em 0;
       @include align-items(center);
+      @include flex-flow(row nowrap);
+      @include justify-content(space-between);
 
       h1, p {
         margin: 0;
         padding: 0;
+        width: 9rem;
       }
 
       img {
-        width: 5em;
-        height: 5em;
+        width: 5rem;
+        height: 5rem;
 
         margin: 1em;
         padding: 0;
@@ -269,6 +325,8 @@ article {
 
           figcaption {
             padding: 0.5em;
+
+            font-family: 'Rock Salt', cursive;
           }
         }
       }

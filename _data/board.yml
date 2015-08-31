@@ -1,6 +1,6 @@
 name: javaBin
 members:
-  - name: Soft kitty
+  - name: Rustam Mehmandarov
     role: Leder
     img:  https://placekitten.com/300/300?image=9
     region: Oslo
@@ -8,7 +8,7 @@ members:
     linkedin:
     github:
 
-  - name: Warm kitty
+  - name: Janniche Haugen
     role: Økonomiansvarlig
     img:  https://placekitten.com/300/300?image=8
     region: Oslo
@@ -16,7 +16,7 @@ members:
     linkedin:
     github:
 
-  - name: Little ball of fur
+  - name: Espen Herseth Halvorsen
     role: JavaZone-leder
     img:  https://placekitten.com/300/300?image=1
     region: Oslo
@@ -24,82 +24,82 @@ members:
     linkedin:
     github:
 
-  - name: Happy kitty
-    role: Styremedlem
+  - name: Jaran Nilsen
+    role: Regionkontakt
     img:  https://placekitten.com/300/300?image=10
-    region: Bergen
-    twitter:
-    linkedin:
-    github:
-
-  - name: Sleepy kitty
-    role: Styremedlem
-    img:  https://placekitten.com/300/300?image=15
     region: Sørlandet
     twitter:
     linkedin:
     github:
 
-  - name: Purr, purr, purr
+  - name: Aleksander Stensby
     role: Styremedlem
-    img:  https://placekitten.com/300/300?image=14
+    img:  https://placekitten.com/300/300?image=15
     region: Vestfold
     twitter:
     linkedin:
     github:
 
-  - name: Soft kitty
-    role: Leder
+  - name: Bjørn Hamre
+    role: Styremedlem
+    img:  https://placekitten.com/300/300?image=14
+    region: Bergen
+    twitter:
+    linkedin:
+    github:
+
+  - name: Dervis M
+    role: Styremedlem
     img:  https://placekitten.com/300/300?image=9
     region: Oslo
     twitter:
     linkedin:
     github:
 
-  - name: Warm kitty
-    role: Økonomiansvarlig
+  - name: Henrik Nordvik
+    role: Styremedlem
     img:  https://placekitten.com/300/300?image=8
     region: Oslo
     twitter:
     linkedin:
     github:
 
-  - name: Little ball of fur
-    role: JavaZone-leder
+  - name: Håkon Botnmark Jahre
+    role: Styremedlem
     img:  https://placekitten.com/300/300?image=1
     region: Oslo
     twitter:
     linkedin:
     github:
 
-  - name: Happy kitty
+  - name: Marvin Lillehaug
     role: Styremedlem
     img:  https://placekitten.com/300/300?image=10
-    region: Bergen
+    region: Trondheim
     twitter:
     linkedin:
     github:
 
-  - name: Sleepy kitty
+  - name: Stian Nygaard
     role: Styremedlem
     img:  https://placekitten.com/300/300?image=15
-    region: Sørlandet
+    region: Oslo
     twitter:
     linkedin:
     github:
 
-  - name: Purr, purr, purr
+  - name: Sveinung Dalatun
     role: Styremedlem
     img:  https://placekitten.com/300/300?image=14
-    region: Vestfold
+    region: Oslo
     twitter:
     linkedin:
     github:
 
-  - name: Purr, purr, purr
+  - name: Trygve Laugstøl
     role: Styremedlem
     img:  https://placekitten.com/300/300?image=14
-    region: Vestfold
+    region: Oslo
     twitter:
     linkedin:
     github:

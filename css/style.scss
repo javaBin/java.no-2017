@@ -301,7 +301,8 @@ article {
     @include flexbox;
 
     @include flex-flow(row wrap);
-    @include justify-content(space-between);
+    @include justify-content(space-around);
+    @include align-content(flex-start);
 
     section {
       @include flexbox;
@@ -314,6 +315,8 @@ article {
       @include align-items(center);
       @include flex-flow(row nowrap);
       @include justify-content(space-between);
+
+      @include flex(auto);
 
       background: rgba(255, 255, 255, 0.5);
 
@@ -336,6 +339,12 @@ article {
 
         object-fit: cover;
         border-radius: 100%;
+      }
+
+      &:last-child {
+        //@include justify-self(flex-start);
+        @include flex(auto);
+        max-width: 17em;
       }
     }
   }
@@ -414,10 +423,13 @@ article {
   &#om {
     div {
       -webkit-column-span: all;
+      column-span: all;
     }
 
     -webkit-column-count: 3;
     -webkit-column-rule: rgba(255, 255, 255, 0.5) thin solid;
+    column-count: 3;
+    column-rule: rgba(255, 255, 255, 0.5) thin solid;
 
     p {
       background: rgba(255, 255, 255, 0.5);
@@ -430,6 +442,108 @@ article {
        margin-top: 0;
        padding-top: 0;
      }*/
+  }
+
+  &#meetup {
+    > div {
+      &.header {
+      }
+
+      &.flex-box {
+        @include flex-flow(column nowrap);
+        @include flexbox;
+
+        div.meetup {
+          //@include flex(1);
+          @include flexbox;
+          //@include flex-flow(row wrap);
+
+          @include align-items(center);
+          @include justify-content(flex-start);
+
+          background: $lightGreenColor;
+
+          margin: 0.5em;
+          padding: 0.5em;
+
+          figure {
+            @include flexbox;
+            @include flex-flow(column);
+            //@include flex(1);
+            @include justify-self(flex-start);
+            @include align-items(center);
+            width: 10em;
+            //border: solid black thin;
+
+            img {
+              width: 75px;
+              height: 75px;
+              margin: 0.5em;
+            }
+          }
+
+          > div {
+            @include flexbox;
+            @include flex-flow(column nowrap);
+            @include align-items(flex-start);
+            @include flex(auto);
+            //@include justify-self(flex-start);
+
+            margin: 0.5em;
+            padding: 0.5em;
+
+            p {
+              margin: 0;
+              padding: 0;
+            }
+
+            .eventlink {
+              font-size: 1.2em;
+              font-weight: bold;
+              color: $blackColor;
+            }
+
+            .rsvp-count {
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+
+            &:last-child {
+              @include flexbox;
+              @include flex-flow(column nowrap);
+              @include align-items(center);
+              @include justify-self(flex-end);
+              //@include flex(1);
+              max-width: 10em;
+
+              //border: thin solid black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &#bidra {
+    .header {
+      -webkit-column-span: all;
+      column-span: all;
+    }
+    -webkit-column-count: 3;
+    column-count: 3;
+
+    h2,h3,p {
+      margin: 0;
+      background: rgba(255,255,255,0.5);
+    }
+
+    h2, h3 {
+      padding: 1em 0.5em 0.5em;
+    }
+
+    p {
+      padding: 0.5em;
+    }
   }
 }
 
@@ -476,7 +590,7 @@ header.sticky {
     h1 {
       font-size: 1.5rem;
       margin: 0;
-      padding:0;
+      padding: 0;
     }
 
     h2 {

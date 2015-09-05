@@ -3,14 +3,13 @@ title:  Om oss
 cssId:  om
 date:   2015-08-11 19:23
 index:  1
-image:  /img/JavaDukeFY14_Scientist_full_small.png
+image:  /img/javaBin_btn_tilWebside_0109_2.svg
 ---
-
- javaBin er en non- profit, uavhengig organisasjon. Formålet er å fremme java kompetanse blant medlemmer, medlemsbedrifter og markedet. javaBin har hovedkontor i Oslo, med undergrupper i Stavanger, Bergen, Trondheim, i Vestfold og på Sørlandet. I 2009 hadde gruppen over 2000 medlemmer fra over 210 firmaer. 
- Fagmøtene består av kort informasjon fra ledelsen i javaBin, samt ett eller flere foredrag hentet fra medlemmer, medlemsbedrifter eller eksterne foredragsholdere. Møtene har godt oppmøte og samler kompetansepersoner med god bredde innenfor javautvikling.
+javaBin er en non- profit, uavhengig organisasjon. Formålet er å fremme java kompetanse blant medlemmer, medlemsbedrifter og markedet. javaBin har hovedkontor i Oslo, med undergrupper i Stavanger, Bergen, Trondheim, i Vestfold og på Sørlandet. I 2009 hadde gruppen over 2000 medlemmer fra over 210 firmaer. 
+Fagmøtene består av kort informasjon fra ledelsen i javaBin, samt ett eller flere foredrag hentet fra medlemmer, medlemsbedrifter eller eksterne foredragsholdere. Møtene har godt oppmøte og samler kompetansepersoner med god bredde innenfor javautvikling.
  
- De månedlige møtene er en god måte å styrke markedet på java platformen, og er en arena for å dele erfaringer og informasjon i tillegg til å være en sosial arena som knytter kontakter på tvers av firmaer og fagmiljøer.
+De månedlige møtene er en god måte å styrke markedet på java platformen, og er en arena for å dele erfaringer og informasjon i tillegg til å være en sosial arena som knytter kontakter på tvers av firmaer og fagmiljøer.
  
- javaBin arrangerer Norges største utviklerkonferanse, [JavaZone](http://www.javazone.no/), en gang i året. JavaZone samler utviklere og arkitekter fra hele Norge, og har foredragsholder både fra Norge og fra utlandet. JavaZone samlet i 2009 over 2 000 personer i Oslo Spektrum.
+javaBin arrangerer Norges største utviklerkonferanse, [JavaZone](http://www.javazone.no/), en gang i året. JavaZone samler utviklere og arkitekter fra hele Norge, og har foredragsholder både fra Norge og fra utlandet. JavaZone samlet i 2009 over 2 000 personer i Oslo Spektrum.
  
- Java Brukergruppen i Norge ble første gang startet sommeren 1996 som et samarbeid mellom [Skrivervik Data](http://web.archive.org/web/19961114171337/http://www.sdata.no/), [Radio 1](http://www.radio1.no/) og [Schibsted Nett](http://web.archive.org/web/19961113062732/http://www0.sn.no/). Formålet var å stå som arrangør av en Norsk [applet-konkurranse](http://web.archive.org/web/19970619020307/www.java.no/javaBIN/nytt.html#nr9) etter mønster av en tilsvarende internasjonal konkurranse arrangert av SunSoft. Brukergruppen døde deretter ut inntil ildsjeler tok initiativ til [stiftelsesmøte 23. april 1998](http://www4.java.no/web/show.do?implId=14&articleid=296).
+Java Brukergruppen i Norge ble første gang startet sommeren 1996 som et samarbeid mellom [Skrivervik Data](http://web.archive.org/web/19961114171337/http://www.sdata.no/), [Radio 1](http://www.radio1.no/) og [Schibsted Nett](http://web.archive.org/web/19961113062732/http://www0.sn.no/). Formålet var å stå som arrangør av en Norsk [applet-konkurranse](http://web.archive.org/web/19970619020307/www.java.no/javaBIN/nytt.html#nr9) etter mønster av en tilsvarende internasjonal konkurranse arrangert av SunSoft. Brukergruppen døde deretter ut inntil ildsjeler tok initiativ til [stiftelsesmøte 23. april 1998](http://www4.java.no/web/show.do?implId=14&articleid=296).

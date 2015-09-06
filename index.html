@@ -38,7 +38,7 @@
     <div class="header">
         <h1 data-icon="/img/JavaDukeFY14_Scientist_full_small.png">{{ post.title }}</h1>
         {% if post.image %}
-        <img data-src="{{ post.image }}" src="{{ post.image }}"/>
+        <img data-src="{{ post.image }}" src="{{ post.image }}" alt="Bilde som beskriver {{ post.title }}" />
         {% endif %}
     </div>
     {{ post.content }}

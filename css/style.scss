@@ -22,16 +22,16 @@ $lightTextColor: #ccc;
 $blackColor: #101010;
 $burgundyColor: #a10035;
 $lightRedColor: #ff4f4c;
-$orangeColor: #ff8641;
-$yellowColor: #fcac17;
+$orangeColor: lighten(#ff8641, 0%);
+$yellowColor: lighten(#fcac17, 0%);
 $lightGreenColor: #149089;
 $darkGreenColor: #286a65;
 
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,900italic,900,700italic,700,600italic,600,400italic);
+//@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+//@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,900italic,900,700italic,700,600italic,600,400italic);
 @font-face {
   font-family: FortuneCity;
-  src: url('/fonts/FortuneCity.ttf');
+  src: url('/fonts/fontello.ttf'), url('/fonts/fontello.eot'), url('/fonts/fontello.woff');
 }
 
 @mixin flexbox {
@@ -91,6 +91,13 @@ $darkGreenColor: #286a65;
   align-items: $arg;
 }
 
+@mixin align-self($arg) {
+  -ms-align-self: $arg;
+  -moz-align-self: $arg;
+  -webkit-align-self: $arg;
+  align-self: $arg;
+}
+
 @mixin transform($arg) {
   -webkit-transform: $arg;
   -moz-transform: $arg;
@@ -104,6 +111,20 @@ $darkGreenColor: #286a65;
   padding: 0;*/
   //font-size: 8px;
   color: $mainTextColor;
+}
+
+a {
+  &:visited {
+    color: $burgundyColor;
+  }
+
+  &:hover {
+    color: $lightRedColor;
+  }
+
+  &:active {
+    color: $lightGreenColor;
+  }
 }
 
 html, body {
@@ -157,7 +178,7 @@ header {
 
   top: 0;
 
-  transition: all 1s;
+  transition: all 0.25s;
 
   background: white;
 
@@ -202,7 +223,7 @@ header {
 
         &.header {
           //@include flex-order(1);
-          @include align-items(center);
+          @include align-items(flex-start);
           @include flex(auto);
 
           margin: 0;
@@ -220,16 +241,16 @@ header {
             color: $burgundyColor;
             padding: 0;
             font-family: FortuneCity;
-            font-size: 3.5rem;
-            transition: all 1s;
+            font-size: 3rem;
+            transition: all 0.25s;
           }
 
           h2 {
-            margin: -1.3em 0 0 4em;
+            margin: -1.2em 0 0 4.5em;
             padding: 0;
             color: $burgundyColor;
             font-size: 1em;
-            transition: all 1s;
+            transition: all 0.25s;
           }
         }
       }
@@ -247,11 +268,11 @@ article {
   //box-shadow: 0 0 1rem 0 lightgray;
 
   &:nth-child(odd) {
-    background: $lightGreenColor;
+    //background: $lightGreenColor;
   }
 
   &:nth-child(even) {
-    background: $darkGreenColor;
+    //background: $lightGreenColor;
   }
 
   &:first-of-type {
@@ -269,7 +290,10 @@ article {
     @include align-items(center);
 
     height: 4em;
-    background: $orangeColor;
+    //background: $orangeColor;
+
+    border-bottom: solid medium $orangeColor;
+
     margin: -1rem -1rem 2rem;
     padding: 0;
     //box-shadow: 0rem 0.2rem 0.5rem 0 lightgray;
@@ -278,7 +302,7 @@ article {
       @include flex(auto);
       margin: 0;
       padding: 0 1em;
-      color: white;
+      color: $orangeColor;
     }
 
     img {
@@ -318,7 +342,9 @@ article {
 
       @include flex(auto);
 
-      background: rgba(255, 255, 255, 0.5);
+      //background: rgba(255, 255, 255, 0.5);
+
+      border-bottom: solid thin $burgundyColor;
 
       h2, p {
         margin: 0;
@@ -363,7 +389,7 @@ article {
         line-height: 1.2rem;
         display: block;
 
-        background: rgba(255, 255, 255, 0.8);
+        //background: rgba(255, 255, 255, 0.8);
         padding: 1rem;
         margin: 0;
 
@@ -377,7 +403,7 @@ article {
         margin: 0 auto;
         padding: 2em;
 
-        background: rgba(255, 255, 255, 0.5);
+        //background: rgba(255, 255, 255, 0.5);
 
         @include flex-flow(row nowrap);
         @include justify-content(space-between);
@@ -387,8 +413,8 @@ article {
           padding: 1em;
           margin: 0.5em;
 
-          background: rgba(255, 255, 255, 0.5);
-          border: solid thin $burgundyColor;
+          //background: rgba(255, 255, 255, 0.5);
+          //border: solid thin $burgundyColor;
 
           min-width: 300px;
 
@@ -427,12 +453,12 @@ article {
     }
 
     -webkit-column-count: 3;
-    -webkit-column-rule: rgba(255, 255, 255, 0.5) thin solid;
+    -webkit-column-rule: $yellowColor thin solid;
     column-count: 3;
-    column-rule: rgba(255, 255, 255, 0.5) thin solid;
+    column-rule: $yellowColor thin solid;
 
     p {
-      background: rgba(255, 255, 255, 0.5);
+      //background: rgba(255, 255, 255, 0.5);
 
       padding: 0.5em;
       margin: 0;
@@ -456,12 +482,14 @@ article {
         div.meetup {
           //@include flex(1);
           @include flexbox;
-          //@include flex-flow(row wrap);
+          @include flex-flow(row wrap);
 
           @include align-items(center);
           @include justify-content(flex-start);
 
-          background: $lightGreenColor;
+          //background: rgba(255,255,255,0.5);
+
+          border-bottom: solid thin $yellowColor;
 
           margin: 0.5em;
           padding: 0.5em;
@@ -529,12 +557,15 @@ article {
       -webkit-column-span: all;
       column-span: all;
     }
+
     -webkit-column-count: 3;
+    -webkit-column-rule: $yellowColor thin solid;
     column-count: 3;
+    column-rule: $yellowColor thin solid;
 
     h2,h3,p {
       margin: 0;
-      background: rgba(255,255,255,0.5);
+      //background: rgba(255,255,255,0.5);
     }
 
     h2, h3 {
@@ -598,6 +629,53 @@ header.sticky {
       opacity: 0;
       margin: 0;
       padding: 0;
+    }
+  }
+}
+
+@media(max-width: $minwidth) {
+  header {
+    left: 0;
+  }
+
+  header, article, footer {
+    width: 100%;
+    min-width: 0;
+  }
+
+  article {
+    &#om, &#bidra {
+      -webkit-column-count: auto;
+      column-count: auto;
+    }
+
+    &#meetup {
+
+    }
+  }
+
+  footer, header nav {
+    ul {
+      @include flex-flow(column wrap);
+    }
+  }
+
+  header {
+    nav {
+      ul {
+        //@include align-content(center);
+        //border: solid thin black;
+        li {
+          //@include align-items(center);
+          &.header {
+            //@include justify-self(center);
+          }
+
+          a {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

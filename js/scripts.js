@@ -2,6 +2,7 @@
  * Created by hakonj on 05/09/15.
  */
 
+
 $(function () {
     var element = $("header");
     $(window).scroll(function () {
@@ -15,20 +16,24 @@ $(function () {
         }
     });
 
-    $("header a").click(function () {
-        var anchor = this.href.split("#")[1];
-        var position = 0;
+    var sammy = $.sammy(function() {
+            this.get('#:test', function() {
+                //var anchor = this.href.split("#")[1];
+                var anchor = this.params['test'];
+                var position = 0;
 
-        if (anchor !== "") {
-            position = $("#" + anchor).offset().top;
+                if (anchor !== "" && anchor !== "home") {
+                    position = $("#" + anchor).offset().top;
+                }
+
+                $('html, body').animate({
+                    scrollTop: position
+                }, 1000);
+
+                //return false;
+            });
         }
-
-        $('html, body').animate({
-            scrollTop: position
-        }, 1000);
-
-        return false;
-    });
+    );
 
     var url = "http://api.meetup.com/2/events?group_id=7480032%2C8449272%2C7371452%2C4060032%2C10847532%2C1764379&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&sig_id=14499833&sig=5cd7131eecfb2f8b4581762dd8c58c77c266d23d";
     $.ajax({
@@ -78,4 +83,6 @@ $(function () {
     function setHeaders(xhr) {
         xhr.setRequestHeader("Origin", "http://java.no");
     }
+
+    sammy.run('#home');
 });

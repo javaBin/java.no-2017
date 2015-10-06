@@ -28,7 +28,7 @@ $(function () {
 
                 $('html, body').animate({
                     scrollTop: position
-                }, 1000);
+                }, 500);
 
                 //return false;
             });

@@ -208,6 +208,12 @@ header {
         //@include flex(1);
         @include align-items(flex-end);
 
+        &#hamburger {
+          > a {
+            display: none;
+          }
+        }
+
         a {
           border: inherit;
 
@@ -563,7 +569,7 @@ article {
     column-count: 3;
     column-rule: $yellowColor thin solid;
 
-    h2,h3,p {
+    h2, h3, p {
       margin: 0;
       //background: rgba(255,255,255,0.5);
     }
@@ -669,6 +675,40 @@ header.sticky {
           //@include align-items(center);
           &.header {
             //@include justify-self(center);
+          }
+
+          &#hamburger {
+            @include flex-flow(column wrap);
+
+            margin: 0;
+            padding: 0;
+
+            > a {
+              display: inherit;
+
+              &:before {
+                font-size: 1.5em;
+                content: "\f0c9";
+                font-family: fontawesome;
+                margin: 0.5em;
+              }
+            }
+
+            ul {
+              visibility: hidden;
+
+              height: 0px;
+
+              width: 100%;
+
+            }
+
+            &:hover {
+              ul {
+                visibility: visible;
+                height: inherit;
+              }
+            }
           }
 
           a {

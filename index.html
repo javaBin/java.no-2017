@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="{{% site.baseurl %}}/css/style.css"/>
-    <link rel="icon" type="image/icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/icon" href="img/favicon.ico"/>
 
     <title>{{ site.title }}</title>
 </head>
@@ -16,19 +16,25 @@
         <ul>
             <li class="header">
                 <a href="#home">
-                        <h1>javaBin</h1>
-                        <h2>Javabrukerforeningen i Norge</h2>
+                    <h1>javaBin</h1>
+
+                    <h2>Javabrukerforeningen i Norge</h2>
                 </a>
             </li>
 
             {% assign posts = site.posts | sort:"index" %}
 
-            {% for post in posts %}
-            <li><a href="#{{ post.cssId }}">{{ post.title }}</a></li>
-            {% endfor %}
+            <li id="hamburger">
+                <a>Meny</a>
+                <ul>
+                    {% for post in posts %}
+                    <li><a href="#{{ post.cssId }}">{{ post.title }}</a></li>
+                    {% endfor %}
 
-            <li><a href="http://www.teknologihuset.no">Teknologihuset</a></li>
-            <li><a href="http://www.javazone.no">JavaZone</a></li>
+                    <li class="external"><a href="http://www.teknologihuset.no">Teknologihuset</a></li>
+                    <li class="external"><a href="http://www.javazone.no">JavaZone</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
@@ -39,7 +45,7 @@
     <div class="header">
         <h1 data-icon="/img/JavaDukeFY14_Scientist_full_small.png">{{ post.title }}</h1>
         {% if post.image %}
-        <img data-src="{{ post.image }}" src="{{ post.image }}" alt="Bilde som beskriver {{ post.title }}" />
+        <img data-src="{{ post.image }}" src="{{ post.image }}" alt="Bilde som beskriver {{ post.title }}"/>
         {% endif %}
     </div>
     {{ post.content }}
@@ -57,7 +63,7 @@
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
 <script src="js/sammy.js"></script>
-<script src="js/better-details-polyfill.js"></script>
+<!--<script src="js/better-details-polyfill.js"></script>-->
 <script src="js/scripts.js"></script>
 
 </body>

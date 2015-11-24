@@ -1,31 +1,10 @@
 ---
 ---
+@import "farger.scss";
+
 $pagewidth: 85%;
 $minwidth: 40em;
 $logo: url("/img/JavaDukeFY14_Scientist_full_small.png");
-
-/*
-	Fargepaletten til JavaZone
-	(inntil vi får less-variabler)
-    Main Text #394549
-    Light Text #ccc
-    Burgunder:  a10035;
-    Lyserød:    ff4f4c;
-    Oransje:    ff8641;
-    Gul:        fcaf17;
-    Lysegrønn:  149089;
-    Mørkegrønn: 286a65;
-    Svart:      101010;
-*/
-$mainTextColor: #394549;
-$lightTextColor: #ccc;
-$blackColor: #101010;
-$burgundyColor: #a10035;
-$lightRedColor: #ff4f4c;
-$orangeColor: lighten(#ff8641, 0%);
-$yellowColor: lighten(#fcac17, 0%);
-$lightGreenColor: #149089;
-$darkGreenColor: #286a65;
 
 //@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 //@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,900italic,900,700italic,700,600italic,600,400italic);
@@ -206,15 +185,23 @@ header {
         color: white;
 
         //@include flex(1);
-        @include align-items(flex-end);
+        @include align-items(flex-start);
+        @include align-content(flex-start);
 
         &#hamburger {
+          padding: 0;
+          margin: 0;
+
+          @include align-content(flex-start);
+
           > a {
             display: none;
           }
         }
 
         a {
+          @include align-content(flex-start);
+
           border: inherit;
 
           &:active {

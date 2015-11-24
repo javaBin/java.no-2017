@@ -1,0 +1,24 @@
+---
+---
+/*
+	Fargepaletten til JavaZone
+	(inntil vi får less-variabler)
+    Main Text #394549
+    Light Text #ccc
+    Burgunder:  a10035;
+    Lyserød:    ff4f4c;
+    Oransje:    ff8641;
+    Gul:        fcaf17;
+    Lysegrønn:  149089;
+    Mørkegrønn: 286a65;
+    Svart:      101010;
+*/
+$mainTextColor: #394549;
+$lightTextColor: #ccc;
+$blackColor: #101010;
+$burgundyColor: #a10035;
+$lightRedColor: #ff4f4c;
+$orangeColor: lighten(#ff8641, 0%);
+$yellowColor: lighten(#fcac17, 0%);
+$lightGreenColor: #149089;
+$darkGreenColor: #286a65;

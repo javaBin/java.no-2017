@@ -61,10 +61,10 @@ $(function () {
                         '       <figcaption>' + item.group.name + '</figcaption>' +
                         '   </figure>' +
                         '   <div>' +
-                        '       <p class="region">' + item.group.name + '</p>' +
-                        '       <p><a class="eventlink" href="' + item.event_url + '">' + item.name + '</a></p>' +
-                        '       <p class="venue">' + venueString + '</p>' +
-                        '       <p class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</p>' +
+                        '       <span class="region">' + item.group.name + '</span>' +
+                        '       <span><a class="eventlink" href="' + item.event_url + '">' + item.name + '</a></span>' +
+                        '       <span class="venue">' + venueString + '</span>' +
+                        '       <span class="timeanddate">' + moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm") + '</span>' +
                         '   </div>' +
                         '   <div>' +
                         '       <span class="rsvp-count">' + item.yes_rsvp_count + '</span>' +

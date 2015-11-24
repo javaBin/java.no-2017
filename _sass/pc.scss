@@ -54,21 +54,23 @@ nav, footer {
 }
 
 header {
-  //@include flexbox;
+  @include flexbox;
 
   //@include align-content(center);
   //@include flex-flow(row nowrap);
-  //@include justify-content(space-between);
+  @include justify-content(center);
 
-  width: $pagewidth;
+  //width: $pagewidth;
   min-width: $minwidth;
+  width: 100%;
 
   //margin: 0 auto;
   padding: 1em;
 
   position: fixed;
-  left: (100% - $pagewidth)/2;
+  //left: (100% - $pagewidth)/2;
   //position: -webkit-sticky;
+  left: 0;
   //position: sticky;
 
   top: 0;
@@ -77,22 +79,31 @@ header {
 
   background: white;
 
+  z-index: 10000000;
+
   //border: solid black thin;
 
+  box-shadow: 0px 5px 5px lighten($orangeColor, 25%);
+
   nav {
-    //@include flexbox;
+    @include flexbox;
+    @include align-content(center);
     //@include flex-order(2);
     //@include justify-self(flex-start);
-    //@include justify-content(space-between);
+    @include justify-content(space-between);
     //@include flex-flow(row wrap);
     //@include flex(1);
+
+    width: $pagewidth;
+
 
     border: inherit;
 
     ul {
-
+      width: 100%;
       border: inherit;
       @include flex-flow(row wrap);
+      @include justify-content(flex-end);
 
       li {
         @include flexbox;
@@ -101,8 +112,9 @@ header {
         color: white;
 
         //@include flex(1);
-        @include align-items(flex-start);
-        @include align-content(flex-start);
+        @include align-items(center);
+        @include align-content(center);
+        @include justify-self(flex-end);
 
         &#hamburger {
           padding: 0;
@@ -132,8 +144,9 @@ header {
 
         &.header {
           //@include flex-order(1);
-          @include align-items(flex-start);
+          @include align-items(center);
           @include flex(auto);
+          @include justify-self(flex-start);
 
           margin: 0;
           padding: 0;
@@ -247,7 +260,7 @@ article {
 
       @include align-items(center);
       @include flex-flow(row nowrap);
-      @include justify-content(space-between);
+      @include justify-content(center);
 
       @include flex(auto);
 
@@ -279,7 +292,6 @@ article {
       &:last-child {
         //@include justify-self(flex-start);
         @include flex(auto);
-        max-width: 17em;
       }
     }
   }
@@ -340,18 +352,6 @@ article {
           }
         }
       }
-
-      &:nth-child(even) {
-        figure {
-          @include transform(rotate(5deg));
-        }
-      }
-
-      &:nth-child(odd) {
-        figure {
-          @include transform(rotate(-5deg));
-        }
-      }
     }
   }
 
@@ -385,11 +385,12 @@ article {
       }
 
       &.flex-box {
-        @include flex-flow(column nowrap);
+        @include flex-flow(column wrap);
         @include flexbox;
 
         div.meetup {
-          //@include flex(1);
+          //display: block;
+          //@include flex(auto);
           @include flexbox;
           @include flex-flow(row wrap);
 
@@ -400,36 +401,41 @@ article {
 
           border-bottom: solid thin $yellowColor;
 
-          margin: 0.5em;
-          padding: 0.5em;
+          margin: 0.5rem;
+          padding: 0.5rem;
 
           figure {
+            //display: flex;
             @include flexbox;
             @include flex-flow(column);
             //@include flex(1);
             @include justify-self(flex-start);
             @include align-items(center);
-            width: 10em;
+            width: 10rem;
             //border: solid black thin;
 
             img {
               width: 75px;
               height: 75px;
-              margin: 0.5em;
+              margin: 0.5rem;
             }
           }
 
           > div {
+            //display: inline-flex;
+            word-wrap: break-word;
             @include flexbox;
-            @include flex-flow(column nowrap);
+            @include flex-flow(column wrap);
             @include align-items(flex-start);
             @include flex(auto);
             //@include justify-self(flex-start);
 
-            margin: 0.5em;
-            padding: 0.5em;
+            width: 10rem;
 
-            p {
+            margin: 0.5rem;
+            padding: 0.5rem;
+
+            span {
               margin: 0;
               padding: 0;
             }
@@ -446,12 +452,16 @@ article {
             }
 
             &:last-child {
+              margin: 0.5rem;
+              padding: 0.5rem;
+
+              //display: inline-flex;
               @include flexbox;
-              @include flex-flow(column nowrap);
+              @include flex-flow(column wrap);
               @include align-items(center);
               @include justify-self(flex-end);
-              //@include flex(1);
-              max-width: 10em;
+              @include flex(auto);
+              max-width: 10rem;
 
               //border: thin solid black;
             }

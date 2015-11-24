@@ -1,0 +1,82 @@
+@import "felles";
+
+@media(max-width: $minwidth) {
+  header {
+    left: 0;
+  }
+
+  header, article, footer {
+    width: 100%;
+    min-width: 0;
+  }
+
+  article {
+    &#om, &#bidra {
+      -webkit-column-count: auto;
+      column-count: auto;
+    }
+
+    &#meetup {
+
+    }
+  }
+
+  footer, header nav {
+    ul {
+      @include flex-flow(column wrap);
+    }
+  }
+
+  header {
+    nav {
+      ul {
+        //@include align-content(center);
+        //border: solid thin black;
+        li {
+          //@include align-items(center);
+          &.header {
+            //@include justify-self(center);
+          }
+
+          &#hamburger {
+            @include flex-flow(column wrap);
+
+            margin: 0;
+            padding: 0;
+
+            > a {
+              display: inherit;
+
+              &:before {
+                font-size: 1.5em;
+                content: "\f0c9";
+                font-family: fontawesome;
+                margin: 0.5em;
+              }
+            }
+
+            ul {
+              visibility: hidden;
+
+              height: 0px;
+
+              width: 100%;
+
+            }
+
+            &:hover {
+              ul {
+                visibility: visible;
+                height: inherit;
+              }
+            }
+          }
+
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

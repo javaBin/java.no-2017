@@ -1,0 +1,71 @@
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($arg) {
+  -ms-flex: $arg;
+  -moz-box-flex: $arg;
+  -webkit-flex: $arg;
+  flex: $arg;
+}
+
+@mixin flex-flow($arg) {
+  -ms-flex-flow: $arg;
+  -moz-flex-flow: $arg;
+  -webkit-flex-flow: $arg;
+  flex-flow: $arg;
+}
+
+@mixin flex-order($arg) {
+  -moz-order: $arg;
+  -ms-flex-order: $arg;
+  -webkit-order: $arg;
+  order: $arg;
+}
+
+@mixin justify-content($arg) {
+  -ms-justify-content: $arg;
+  -moz-justify-content: $arg;
+  -webkit-justify-content: $arg;
+  justify-content: $arg;
+}
+
+@mixin justify-self($arg) {
+  -ms-justify-self: $arg;
+  -moz-justify-self: $arg;
+  -webkit-justify-self: $arg;
+  justify-self: $arg;
+}
+
+@mixin align-content($arg) {
+  -ms-align-content: $arg;
+  -moz-align-content: $arg;
+  -webkit-align-content: $arg;
+  align-content: $arg;
+}
+
+@mixin align-items($arg) {
+  -ms-align-items: $arg;
+  -moz-align-items: $arg;
+  -webkit-align-items: $arg;
+  align-items: $arg;
+}
+
+@mixin align-self($arg) {
+  -ms-align-self: $arg;
+  -moz-align-self: $arg;
+  -webkit-align-self: $arg;
+  align-self: $arg;
+}
+
+@mixin transform($arg) {
+  -webkit-transform: $arg;
+  -moz-transform: $arg;
+  -ms-transform: $arg;
+  transform: $arg;
+}

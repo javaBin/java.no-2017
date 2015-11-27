@@ -1,4 +1,4 @@
-javabin.github.com - nye java.no
+javabin.github.com - java.no
 ==================
 
 javabin.github.com er repoet for http://java.no.
@@ -26,3 +26,12 @@ Får du problemer med at Chrome ikke tillater HTML-filene å laste via ajax, så
     --allow-file-access-from-files
 
 Det skal fikse problemet.
+
+
+Utkiklingsbranch
+----------------
+Det finnes et eget branch for nyutvikling. Koden som ligger der bruker [Jekyll](https://jekyllrb.com/).
+
+* [Installer](http://jekyllrb.com/docs/installation/) Jekyll
+* Sjekk ut koden fra utviklingsbranchen
+* [Start](http://jekyllrb.com/docs/usage/) Jekyll

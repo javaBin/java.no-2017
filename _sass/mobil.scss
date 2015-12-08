@@ -17,7 +17,7 @@
     }
 
     &#meetup {
-
+      @include flex-flow(column nowrap);
     }
   }
 
@@ -29,7 +29,9 @@
 
   header {
     nav {
+      width: 100%;
       ul {
+        width: 100%;
         //@include align-content(center);
         //border: solid thin black;
         li {
@@ -76,6 +78,19 @@
             width: 100%;
           }
         }
+      }
+    }
+  }
+
+  #regioner {
+    details {
+
+      div {
+        border: thin solid black;
+
+        display: block;
+        float: none;
+        clear: both;
       }
     }
   }

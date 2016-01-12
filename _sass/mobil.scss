@@ -18,6 +18,11 @@
 
     &#meetup {
       @include flex-flow(column nowrap);
+      div.flex-box {
+        div.meetup {
+          @include flex-flow(column);
+        }
+      }
     }
   }
 
@@ -47,13 +52,19 @@
             padding: 0;
 
             > a {
+              font-size: 1.3em;
               display: inherit;
+              margin: 0.5em;
 
               &:before {
                 font-size: 1.5em;
                 content: "\f0c9";
                 font-family: fontawesome;
-                margin: 0.5em;
+                margin-right: 0.5em;
+                line-height: 1em;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
               }
             }
 
@@ -82,15 +93,19 @@
     }
   }
 
-  #regioner {
+  article#regioner {
     details {
 
-      div {
-        border: thin solid black;
+      > div {
+        @include flexbox();
+        @include flex(1);
+        @include flex-flow(column nowrap);
+        //border-color: red;
 
-        display: block;
-        float: none;
-        clear: both;
+        figure {
+          margin: 0;
+          padding: 0;
+        }
       }
     }
   }

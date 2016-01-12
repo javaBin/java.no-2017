@@ -1,11 +1,18 @@
 @import "felles";
 
-* {
+html {
   box-sizing: border-box;
+}
+
+* {
   /*margin: 0;
   padding: 0;*/
   //font-size: 8px;
   color: $mainTextColor;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 a {
@@ -392,10 +399,11 @@ article {
           //display: block;
           //@include flex(auto);
           @include flexbox;
-          @include flex-flow(row wrap);
+          @include flex-flow(row);
 
           @include align-items(center);
-          @include justify-content(center);
+          @include justify-content(space-around);
+          @include align-content(middle);
 
           //background: rgba(255,255,255,0.5);
 
@@ -405,35 +413,29 @@ article {
           padding: 0.5rem;
 
           figure {
-            //display: flex;
+            position: relative;
+            display: flex;
             @include flexbox;
             @include flex-flow(column);
-            //@include flex(1);
+            @include flex(2 0 10rem);
             @include justify-self(flex-start);
             @include align-items(center);
             width: 10rem;
             //border: solid black thin;
 
             img {
-              width: 75px;
-              height: 75px;
-              margin: 0.5rem;
+              width: inherit;
+              object-fit: contain;
             }
           }
 
           > div {
             //display: inline-flex;
-            word-wrap: break-word;
             @include flexbox;
             @include flex-flow(column wrap);
             @include align-items(flex-start);
-            @include flex(auto);
+            @include flex(2 0 auto);
             //@include justify-self(flex-start);
-
-            width: 10rem;
-
-            margin: 0.5rem;
-            padding: 0.5rem;
 
             span {
               margin: 0;
@@ -452,15 +454,12 @@ article {
             }
 
             &:last-child {
-              margin: 0.5rem;
-              padding: 0.5rem;
-
               //display: inline-flex;
               @include flexbox;
               @include flex-flow(column wrap);
               @include align-items(center);
               @include justify-self(flex-end);
-              @include flex(auto);
+              @include flex(2 0 10rem);
               max-width: 10rem;
 
               //border: thin solid black;

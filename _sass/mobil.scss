@@ -98,13 +98,17 @@
 
       > div {
         @include flexbox();
-        @include flex(1);
+        @include flex(auto);
         @include flex-flow(column nowrap);
         //border-color: red;
 
         figure {
           margin: 0;
           padding: 0;
+
+          width: 100%;
+
+
         }
       }
     }

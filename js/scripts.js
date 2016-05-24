@@ -23,7 +23,7 @@ $(function () {
                 var position = 0;
 
                 if (anchor !== "" && anchor !== "home") {
-                    position = $("#" + anchor).offset().top;
+                    position = $("#" + anchor).position().top;
                 }
 
                 $('html, body').animate({

@@ -54,3 +54,41 @@ nav, footer {
     }
   }
 }
+
+footer {
+  ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1em;
+
+    &:before {
+      font-family: fontawesome;
+      margin-right: 0.3em;
+      color: #000;
+    }
+
+    &.github {
+      &:before {
+        content: "\f09b";
+      }
+    }
+
+    &.facebook {
+      &:before {
+        content: "\f230";
+      }
+    }
+
+    &.instagram {
+      &:before {
+        content: "\f16d";
+      }
+    }
+
+    &.twitter {
+      &:before {
+        content: "\f099";
+      }
+    }
+  }
+}

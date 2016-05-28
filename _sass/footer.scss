@@ -1,61 +1,88 @@
 footer {
-  ul li {
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 1em;
+  width: $pagewidth;
 
-    a {
-      &:before {
-        font-family: fontawesome;
-        margin-right: 0.3em;
-        color: #c4e3f3;
-        height: 1em;
-        width: 1em;
+  padding: 0;
+  margin: auto;
 
-        text-decoration: none;
-      }
+  @include flexbox;
 
-      &.facebook {
+  @include align-content(center);
+  @include justify-content(space-between);
+
+  ul {
+    @include flexbox;
+    @include flex(auto);
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include justify-content(flex-start);
+
+    &.external {
+      @include justify-content(flex-end);
+      //@include justify-self(flex-end);
+    }
+
+    li {
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 1em;
+
+
+      a {
         &:before {
-          content: "\f230";
+          font-family: fontawesome;
+          margin-right: 0.3em;
+          color: #c4e3f3;
+          height: 1em;
+          width: 1em;
+
+          text-decoration: none;
         }
-      }
 
-      &.github {
-        &:before {
-          content: "\f09b";
+        &.facebook {
+          &:before {
+            content: "\f230";
+          }
         }
-      }
 
-      &.instagram {
-        &:before {
-          content: "\f16d";
+        &.github {
+          &:before {
+            content: "\f09b";
+          }
         }
-      }
 
-      &.twitter {
-        &:before {
-          content: "\f099";
+        &.instagram {
+          &:before {
+            content: "\f16d";
+          }
         }
-      }
 
-      &.vimeo {
-        &:before {
-          content: "\f27d";
+        &.twitter {
+          &:before {
+            content: "\f099";
+          }
         }
-      }
 
-      &.javazone {
-        margin-left: 1rem;
+        &.vimeo {
+          &:before {
+            content: "\f27d";
+          }
+        }
 
-        &:before {
-          position: absolute;
-          height: 1.3rem;
-          padding-left: 1.6rem;
-          margin-left: -1.6rem;
-          content: " ";
-          background: url('http://2016.javazone.no/assets/favicon-96x96.png') no-repeat;
-          background-size: contain;
+        &.javazone {
+          margin-left: 1rem;
+
+          &:before {
+            position: absolute;
+            height: 1.3rem;
+            padding-left: 1.6rem;
+            margin-left: -1.6rem;
+            content: " ";
+            background: url('http://2016.javazone.no/assets/favicon-96x96.png') no-repeat;
+            background-size: contain;
+          }
         }
       }
     }

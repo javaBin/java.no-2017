@@ -42,8 +42,9 @@ nav #hamburger {
 
 header {
   @include flexbox;
-
+  @include box-shadow(0px 5px 39px -12px $boxShaddowColor);
   @include justify-content(center);
+  @include linear-gradient($headerBackgroundColor);
 
   min-width: $minwidth;
   width: 100%;
@@ -57,18 +58,7 @@ header {
 
   transition: all 0.25s;
 
-  background-color: $headerColor;
-
-  //background: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(20, 144, 137, 0.5)), color-stop(100%, rgba(20, 144, 137, 0.5)), color-stop(100%,rgba(20, 144, 137, 0.5))), url("../img/bg_pattern.png"); /* Chrome, Safari4+ */
-  //  background: -webkit-linear-gradient(left, transparent 0%,rgba(20, 144, 137, 0.5) 50%,transparent 100%), url("../img/bg_pattern.png"); /* Chrome10+, Safari5.1+ */
-  //  background: -moz-linear-gradient(left, transparent 0%,rgba(20, 144, 137, 0.5) 50%,transparent 80%), url("../img/bg_pattern.png");    /* FF3.6+ */
-  background: linear-gradient(to left, rgba(20, 144, 137, 0.5), rgba(20, 144, 137, 0.5)), url("../img/bg_pattern.png"); /* W3C */
-
   z-index: 10000000;
-
-  -webkit-box-shadow: 0px 5px 39px -12px rgba(62, 76, 87, 1);
-  -moz-box-shadow: 0px 5px 39px -12px rgba(62, 76, 87, 1);
-  box-shadow: 0px 5px 39px -12px rgba(62, 76, 87, 1);
 
   &.sticky {
     li.header {

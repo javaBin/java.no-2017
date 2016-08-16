@@ -33,7 +33,17 @@ html, body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, 'sans serif';
   line-height: 1.5;
 
+}
+
+html {
   background-image: url("../img/bg_pattern.png");
+}
+
+body {
+  background-image: url("../img/gameocode.jpeg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
 }
 
 nav {

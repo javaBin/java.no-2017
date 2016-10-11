@@ -5,6 +5,8 @@ date:   2015-08-11 19:23
 index:  1
 image:  /img/javaBin_btn_tilWebside_0109_2.svg
 ---
+<div class="flex-row" markdown="1">
+
 javaBin er en non- profit, uavhengig organisasjon. Formålet er å fremme java kompetanse blant medlemmer, medlemsbedrifter og markedet. 
 javaBin har hovedkontor i Oslo, med undergrupper i Stavanger, Bergen, Trondheim, i Vestfold og på Sørlandet. 
 I 2009 hadde gruppen over 2000 medlemmer fra over 210 firmaer. 
@@ -29,3 +31,9 @@ Brukergruppen døde deretter ut inntil ildsjeler tok initiativ til [stiftelsesm�
 
 [applet-konkurranse]: http://web.archive.org/web/19970619020307/www.java.no/javaBIN/nytt.html#nr9
 [stiftelse]: http://www4.java.no/web/show.do?implId=14&articleid=296
+
+</div>
+
+<div class="lefty">
+<img src="/img/duke/nisse_duke.svg" />
+</div>

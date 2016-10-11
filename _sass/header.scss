@@ -42,9 +42,7 @@ nav #hamburger {
 
 header {
   @include flexbox;
-  @include box-shadow(0px 5px 39px -12px $boxShaddowColor);
   @include justify-content(center);
-  @include linear-gradient($headerBackgroundColor);
 
   min-width: $minwidth;
   width: 100%;
@@ -61,6 +59,9 @@ header {
   z-index: 10000000;
 
   &.sticky {
+
+    background-color: teal;
+
     li.header {
       h1 {
         font-size: 1.5rem;

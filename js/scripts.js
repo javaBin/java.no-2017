@@ -45,7 +45,7 @@ $(function () {
             $.each(results, function (i, item) {
                 moment.locale('no');
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
-                item.available_rsvp = (item.rsvp_limit - item.yes_rsvp_count) || 0;
+                // item.available_rsvp = (item.rsvp_limit - item.yes_rsvp_count) || 0;
             });
 
             console.log(data);

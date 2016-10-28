@@ -5,12 +5,14 @@ title: Helteliste
 <section class="list">
     <div class="row">
       <div class="col-xs-6">
-        Test 1
-      </div>
-      <div class="col-xs-6">
-        Test 2
+        &nbsp;
       </div>
     </div>
+    {% for image in site.static_files %}
+    {% if image.path contains 'img/javabin/Helteliste' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+    {% endif %}
+{% endfor %}
 </section>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

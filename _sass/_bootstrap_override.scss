@@ -1,3 +1,13 @@
+@import "variable.scss";
+
+* {
+  box-sizing: border-box;
+}
+
 .row {
   margin: 1%;
+}
+
+.container {
+  margin-top: $headerHeight;
 }

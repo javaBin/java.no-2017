@@ -5,25 +5,32 @@
 
 $(function () {
     var navbar = $("#navbar");
-    function mycketBraFraaga(event) {
-        if(event !== undefined) {
-            event.preventDefault();
-        }
+    function addSticky() {
+        navbar.addClass("sticky");
+    }
 
+    function removeSticky() {
+        navbar.removeClass("sticky");
+    }
+
+    function mycketBraFraaga() {
         var scroll = $(window).scrollTop();
 
 
         if (scroll > 0) {
-            navbar.addClass("sticky");
+            addSticky();
         } else {
-            navbar.removeClass("sticky");
+            removeSticky();
         }
     }
 
     $(window).scroll(mycketBraFraaga);
-    $("body").on({
-        "touchmove": mycketBraFraaga
-    });
+    /* Dette må fikles med... */
+/*    $("body").on({
+        "touchmove": mycketBraFraaga,
+        "touchstart": addSticky,
+        "touchend": removeSticky
+    });*/
 
     var sammy = $.sammy(function () {
             this.get('#:test', function () {

@@ -5,7 +5,6 @@ date:   2015-08-11 19:23
 index:  1
 image:  /img/javaBin_btn_tilWebside_0109_2.svg
 ---
-<div class="flex-row" markdown="1">
 
 javaBin er en non- profit, uavhengig organisasjon. Formålet er å fremme java kompetanse blant medlemmer, medlemsbedrifter og markedet. 
 javaBin har hovedkontor i Oslo, med undergrupper i Stavanger, Bergen, Trondheim, i Vestfold og på Sørlandet. 
@@ -15,7 +14,7 @@ Møtene har godt oppmøte og samler kompetansepersoner med god bredde innenfor j
  
 De månedlige møtene er en god måte å styrke markedet på java platformen, 
 og er en arena for å dele erfaringer og informasjon i tillegg til å være en sosial arena som knytter kontakter på tvers av firmaer og fagmiljøer.
- 
+
 javaBin arrangerer Norges største utviklerkonferanse, [JavaZone], en gang i året. 
 avaZone samler utviklere og arkitekter fra hele Norge, og har foredragsholder både fra Norge og fra utlandet. 
 JavaZone samlet i 2009 over 2 000 personer i Oslo Spektrum.
@@ -31,9 +30,3 @@ Brukergruppen døde deretter ut inntil ildsjeler tok initiativ til [stiftelsesm�
 
 [applet-konkurranse]: http://web.archive.org/web/19970619020307/www.java.no/javaBIN/nytt.html#nr9
 [stiftelse]: http://www4.java.no/web/show.do?implId=14&articleid=296
-
-</div>
-
-<div class="lefty">
-<img src="/img/duke/nisse_duke.svg" />
-</div>

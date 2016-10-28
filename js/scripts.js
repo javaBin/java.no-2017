@@ -54,7 +54,7 @@ $(function () {
             var template = $.templates("#meetupTemplate");
             var htmlOutput = template.render(results);
 
-            $("#meetuplist").html(htmlOutput);
+            $("#meetup").html(htmlOutput);
         },
         beforeSend: setHeaders
     });

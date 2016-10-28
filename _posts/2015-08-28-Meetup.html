@@ -5,15 +5,13 @@ date:   2015-08-28 20:26
 index:  3
 image:  http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png
 ---
-<div id="meetuplist"></div>
-
 <script type="text/x-jsrender" id="meetupTemplate">
 {% raw %}
-    <div class="meetup">
-        <figure>
-            <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center={{:venue.city}},Norway&zoom=10&size=75x75&sensor=false"/>
-            <!--<figcaption>{{:group.name}}</figcaption>-->
-        </figure>
+    <section class="meetup">
+        <!--<figure>-->
+            <!--<img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center={{:venue.city}},Norway&zoom=10&size=75x75&sensor=false"/>-->
+            <!--&lt;!&ndash;<figcaption>{{:group.name}}</figcaption>&ndash;&gt;-->
+        <!--</figure>-->
         <div>
             <!--<span class="region">{{:group.name}}</span>-->
             <a class="eventlink" href="{{:event_url}}">{{:name}}</a>
@@ -25,7 +23,6 @@ image:  http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png
             <!--<span>påmeldte</span>-->
             <!--&lt;!&ndash;<span>{{:available_rsvp}} ledige plasser</span>&ndash;&gt;-->
         <!--</div>-->
-    </div>
+    </section>
 {% endraw %}
-
 </script>

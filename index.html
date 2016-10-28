@@ -52,12 +52,7 @@
     {% assign posts = site.posts | sort:"index" %}
     {% for post in posts %}
     <section id="{{ post.cssId }}" class="row">
-        <header class="">
             <h1>{{ post.title }}</h1>
-            <!--{% if post.image %}-->
-            <!--<img data-src="{{ post.image }}" src="{{ post.image }}" alt="Bilde som beskriver {{ post.title }}"/>-->
-            <!--{% endif %}-->
-        </header>
         <article>
             {{ post.content }}
         </article>

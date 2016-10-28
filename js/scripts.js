@@ -4,7 +4,7 @@
 
 
 $(function () {
-    var element = $("header");
+    var element = $("#navbar");
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 

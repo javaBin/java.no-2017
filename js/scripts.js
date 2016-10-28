@@ -4,16 +4,25 @@
 
 
 $(function () {
-    var element = $("#navbar");
-    $(window).scroll(function () {
+    var navbar = $("#navbar");
+    function mycketBraFraaga(event) {
+        if(event !== undefined) {
+            event.preventDefault();
+        }
+
         var scroll = $(window).scrollTop();
 
 
         if (scroll > 0) {
-            element.addClass("sticky");
+            navbar.addClass("sticky");
         } else {
-            element.removeClass("sticky");
+            navbar.removeClass("sticky");
         }
+    }
+
+    $(window).scroll(mycketBraFraaga);
+    $("body").on({
+        "touchmove": mycketBraFraaga
     });
 
     var sammy = $.sammy(function () {
@@ -23,7 +32,7 @@ $(function () {
                 var position = 0;
 
                 if (anchor !== "" && anchor !== "home") {
-                    position = $("#" + anchor).offset().top;
+                    position = $("#" + anchor).offset().top - navbar.outerHeight();
                 }
 
                 $('html, body').animate({

@@ -61,25 +61,11 @@
 
 
     <footer>
-        <ul>
-            <li><a href="https://www.facebook.com/javabin" class="facebook">Facebook</a></li>
-            <li><a href="https://github.com/javaBin" class="github">GitHub</a></li>
-            <li><a href="https://instagram.com/javabin/" class="instagram">Instagram</a></li>
-            <li><a href="https://twitter.com/javaBin" class="twitter">Twitter</a></li>
-            <li><a href="https://vimeo.com/javabin" class="vimeo">Vimeo</a></li>
-
-        </ul>
-        <ul class="external">
-            <li><a href="http://www.javazone.no" class="javazone">JavaZone</a></li>
-            <li><a href="http://www.teknologihuset.no" class="teknologihuset">Teknologihuset</a></li>
-        </ul>
+        {% include social-media.html %}
+        {% include external-links.html %}
     </footer>
 
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.76/jsrender.min.js"></script>
-    <script src="js/sammy.js"></script>
-    <script src="js/scripts.js"></script>
+    {% include scripts.html %}
 
 </div> <!-- /container -->
 </body>

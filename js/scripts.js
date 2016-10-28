@@ -23,7 +23,7 @@ $(function () {
                 var position = 0;
 
                 if (anchor !== "" && anchor !== "home") {
-                    position = $("#" + anchor).offset().top - $("header").outerHeight();
+                    position = $("#" + anchor).offset().top;
                 }
 
                 $('html, body').animate({

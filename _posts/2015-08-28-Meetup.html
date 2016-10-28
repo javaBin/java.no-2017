@@ -9,11 +9,11 @@ image:  http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png
 {% raw %}
 {{props #data}}
     <section class="meetup">
-        <h1>{{>key}}</h1>
+        <h2>{{>key}}</h2>
         <ul>
         {{for prop}}
             <li>
-                <h2><a href="{{:event_url}}">{{:name}}</a></h2>
+                <h3><a href="{{:event_url}}">{{:name}}</a></h3>
                 <p>{{:time}}</p>
             </li>
         {{/for}}

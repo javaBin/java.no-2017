@@ -4,72 +4,89 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/style.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/style.css"/>-->
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
     <link rel="icon" type="image/icon" href="img/favicon.ico"/>
 
     <title>{{ site.title }}</title>
 </head>
 <body>
-<!--<header id="home">-->
-    <!--<nav>-->
-        <!--<ul>-->
-            <!--<li class="header">-->
-                <!--<a href="#home">-->
-                    <!--<h1>javaBin {}</h1>-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    javaBin {}
+                </a>
+            </div>
 
-                    <!--&lt;!&ndash;<h2>Javabrukerforeningen i Norge</h2>&ndash;&gt;-->
-                <!--</a>-->
-            <!--</li>-->
+            {% assign posts = site.posts | sort:"index" %}
 
-            <!--{% assign posts = site.posts | sort:"index" %}-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    {% for post in posts %}
+                    <li>
+                        <a href="#{{ post.cssId }}">
+                            {{ post.title }} <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
 
-            <!--<li id="hamburger">-->
-                <!--<a>&nbsp;</a>-->
-                <!--<ul>-->
-                    <!--{% for post in posts %}-->
-                    <!--<li><a href="#{{ post.cssId }}">{{ post.title }}</a></li>-->
-                    <!--{% endfor %}-->
-                <!--</ul>-->
-            <!--</li>-->
-        <!--</ul>-->
-    <!--</nav>-->
-<!--</header>-->
 
-{% assign posts = site.posts | sort:"index" %}
-{% for post in posts %}
-<section id="{{ post.cssId }}" class="row">
-    <header class="">
-        <h1>{{ post.title }}</h1>
-        <!--{% if post.image %}-->
-        <!--<img data-src="{{ post.image }}" src="{{ post.image }}" alt="Bilde som beskriver {{ post.title }}"/>-->
-        <!--{% endif %}-->
-    </header>
-    <article>
-        {{ post.content }}
-    </article>
-</section>
-{% endfor %}
-<footer>
-    <ul>
-        <li><a href="https://www.facebook.com/javabin" class="facebook">&nbsp;</a></li>
-        <li><a href="https://github.com/javaBin" class="github">&nbsp;</a></li>
-        <li><a href="https://instagram.com/javabin/" class="instagram">&nbsp;</a></li>
-        <li><a href="https://twitter.com/javaBin" class="twitter">&nbsp;</a></li>
-        <li><a href="https://vimeo.com/javabin" class="vimeo">&nbsp;</a></li>
+<div class="container">
 
-    </ul>
-    <ul class="external">
-        <li><a href="http://www.javazone.no" class="javazone">JavaZone</a></li>
-        <li><a href="http://www.teknologihuset.no" class="teknologihuset">Teknologihuset</a></li>
-    </ul>
-</footer>
+    {% assign posts = site.posts | sort:"index" %}
+    {% for post in posts %}
+    <section id="{{ post.cssId }}" class="row">
+        <header class="">
+            <h1>{{ post.title }}</h1>
+            <!--{% if post.image %}-->
+            <!--<img data-src="{{ post.image }}" src="{{ post.image }}" alt="Bilde som beskriver {{ post.title }}"/>-->
+            <!--{% endif %}-->
+        </header>
+        <article>
+            {{ post.content }}
+        </article>
+    </section>
+    {% endfor %}
 
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.76/jsrender.min.js"></script>
-<script src="js/sammy.js"></script>
-<script src="js/scripts.js"></script>
 
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/javabin" class="facebook">Facebook</a></li>
+            <li><a href="https://github.com/javaBin" class="github">GitHub</a></li>
+            <li><a href="https://instagram.com/javabin/" class="instagram">Instagram</a></li>
+            <li><a href="https://twitter.com/javaBin" class="twitter">Twitter</a></li>
+            <li><a href="https://vimeo.com/javabin" class="vimeo">Vimeo</a></li>
+
+        </ul>
+        <ul class="external">
+            <li><a href="http://www.javazone.no" class="javazone">JavaZone</a></li>
+            <li><a href="http://www.teknologihuset.no" class="teknologihuset">Teknologihuset</a></li>
+        </ul>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.76/jsrender.min.js"></script>
+    <script src="js/sammy.js"></script>
+    <script src="js/scripts.js"></script>
+
+</div> <!-- /container -->
 </body>
 </html>

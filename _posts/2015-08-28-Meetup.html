@@ -1,5 +1,5 @@
 ---
-title:  Kommende meetups
+title:  Events
 cssId:  meetup
 date:   2015-08-28 20:26
 index:  3
@@ -7,22 +7,18 @@ image:  http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png
 ---
 <script type="text/x-jsrender" id="meetupTemplate">
 {% raw %}
+{{props #data}}
     <section class="meetup">
-        <!--<figure>-->
-            <!--<img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center={{:venue.city}},Norway&zoom=10&size=75x75&sensor=false"/>-->
-            <!--&lt;!&ndash;<figcaption>{{:group.name}}</figcaption>&ndash;&gt;-->
-        <!--</figure>-->
-        <div>
-            <!--<span class="region">{{:group.name}}</span>-->
-            <a class="eventlink" href="{{:event_url}}">{{:name}}</a>
-            <!--<span class="venue">{{:venue.name}}</span>-->
-            <!--<span class="timeanddate">{{:time}}</span>-->
-        </div>
-        <!--<div>-->
-            <!--<span class="rsvp-count">{{:yes_rsvp_count}}</span>-->
-            <!--<span>påmeldte</span>-->
-            <!--&lt;!&ndash;<span>{{:available_rsvp}} ledige plasser</span>&ndash;&gt;-->
-        <!--</div>-->
+        <h1>{{>key}}</h1>
+        <ul>
+        {{for prop}}
+            <li>
+                <h2><a href="{{:event_url}}">{{:name}}</a></h2>
+                <p>{{:time}}</p>
+            </li>
+        {{/for}}
+        </ul>
     </section>
+{{/props}}
 {% endraw %}
 </script>

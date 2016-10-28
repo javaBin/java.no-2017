@@ -16,8 +16,8 @@ $(function () {
         }
     });
 
-    var sammy = $.sammy(function() {
-            this.get('#:test', function() {
+    var sammy = $.sammy(function () {
+            this.get('#:test', function () {
                 //var anchor = this.href.split("#")[1];
                 var anchor = this.params['test'];
                 var position = 0;
@@ -34,27 +34,40 @@ $(function () {
             });
         }
     );
-    
+
     var url = "http://api.meetup.com/2/events?group_id=7480032%2C8449272%2C7371452%2C4060032%2C10847532%2C1764379&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&sig_id=14499833&sig=5cd7131eecfb2f8b4581762dd8c58c77c266d23d";
     $.ajax({
         url: url,
         type: "GET",
         dataType: "jsonp",
         success: function (data) {
-            var results = data.results;
-            $.each(results, function (i, item) {
+            var resultsHash = {};
+
+            $.each(data.results, function (i, item) {
+
                 moment.locale('no');
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
                 // item.available_rsvp = (item.rsvp_limit - item.yes_rsvp_count) || 0;
+
+
+                var index = item.venue.city;
+
+                var result = resultsHash[index];
+                if (result === undefined) {
+                    result = [];
+                }
+
+                result.push(item);
+
+                resultsHash[index] = result;
+
+
             });
 
-            console.log(data);
-            console.log(results);
-
             var template = $.templates("#meetupTemplate");
-            var htmlOutput = template.render(results);
+            var htmlOutput = template.render(resultsHash);
 
-            $("#meetup").html(htmlOutput);
+            $("#meetup article").html(htmlOutput);
         },
         beforeSend: setHeaders
     });

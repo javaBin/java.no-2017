@@ -7,3 +7,7 @@
 .row {
   margin: 1%;
 }
+
+nav.sticky {
+  @extend .navbar-fixed-top;
+}

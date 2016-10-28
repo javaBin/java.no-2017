@@ -10,7 +10,7 @@ title: Helteliste
     </div>
     {% for image in site.static_files %}
     {% if image.path contains 'img/javabin/Helteliste' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        <img class="maximgsize" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
     {% endif %}
 {% endfor %}
 </section>

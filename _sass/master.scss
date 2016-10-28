@@ -9,6 +9,15 @@
   height: auto;
 }
 
+.imgmarginbottom {
+  margin-bottom: 4px;
+}
+
+.row-centered {
+    text-align: center;
+    width: 100%;
+}
+
 a {
   &:before {
     font-family: fontawesome;

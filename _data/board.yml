@@ -1,7 +1,6 @@
 name: javaBin
 members:
   - name: Rustam Mehmandarov
-    role: Leder
     img:  https://placekitten.com/300/300?image=9
     region: Oslo
     twitter:
@@ -9,7 +8,6 @@ members:
     github:
 
   - name: Janniche Haugen
-    role: Økonomiansvarlig
     img:  https://placekitten.com/300/300?image=8
     region: Oslo
     twitter:
@@ -17,7 +15,6 @@ members:
     github:
 
   - name: Espen Herseth Halvorsen
-    role: JavaZone-leder
     img:  https://placekitten.com/300/300?image=1
     region: Oslo
     twitter:
@@ -25,7 +22,6 @@ members:
     github:
 
   - name: Jaran Nilsen
-    role: Regionkontakt
     img:  https://placekitten.com/300/300?image=10
     region: Sørlandet
     twitter:
@@ -33,7 +29,6 @@ members:
     github:
 
   - name: Aleksander Stensby
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=15
     region: Vestfold
     twitter:
@@ -41,7 +36,6 @@ members:
     github:
 
   - name: Bjørn Hamre
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=14
     region: Bergen
     twitter:
@@ -49,7 +43,6 @@ members:
     github:
 
   - name: Dervis M
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=9
     region: Oslo
     twitter:
@@ -57,7 +50,6 @@ members:
     github:
 
   - name: Henrik Nordvik
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=8
     region: Oslo
     twitter:
@@ -65,7 +57,6 @@ members:
     github:
 
   - name: Håkon Botnmark Jahre
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=1
     region: Oslo
     twitter:
@@ -73,7 +64,6 @@ members:
     github:
 
   - name: Marvin Lillehaug
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=10
     region: Trondheim
     twitter:
@@ -81,7 +71,6 @@ members:
     github:
 
   - name: Stian Nygaard
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=15
     region: Oslo
     twitter:
@@ -89,7 +78,6 @@ members:
     github:
 
   - name: Sveinung Dalatun
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=14
     region: Oslo
     twitter:
@@ -97,7 +85,6 @@ members:
     github:
 
   - name: Trygve Laugstøl
-    role: Styremedlem
     img:  https://placekitten.com/300/300?image=14
     region: Oslo
     twitter:

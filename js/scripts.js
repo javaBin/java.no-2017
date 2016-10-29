@@ -80,10 +80,14 @@ $(function () {
 
             });
 
+            if(resultsHash.length <= 0) {
+                return;
+            }
+
             var template = $.templates("#meetupTemplate");
             var htmlOutput = template.render(resultsHash);
 
-            $("#meetup article").html(htmlOutput);
+            $("#replaceMeetupList").replaceWith(htmlOutput);
         },
         beforeSend: setHeaders
     });

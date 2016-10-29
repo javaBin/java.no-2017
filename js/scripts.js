@@ -58,21 +58,26 @@ $(function () {
         type: "GET",
         dataType: "jsonp",
         success: function (data) {
-            const regionoverride = {
+            const regionsnavnoverride = {
                 "javaBin-Sorlandet": "Sørlandet"
             };
 
-            var resultsHash = {};
+            var resultsHash = {
+                "Oslo": undefined,
+                "Bergen": undefined,
+                "Stavanger": undefined,
+                "Sørlandet": undefined,
+                "Trondheim": undefined,
+                "Vestfold": undefined
+            };
 
             moment.locale('no');
 
             $.each(data.results, function (i, item) {
 
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
-                // item.available_rsvp = (item.rsvp_limit - item.yes_rsvp_count) || 0;
 
-
-                var index = regionoverride[item.group.urlname] || item.venue.city;
+                var index = regionsnavnoverride[item.group.urlname] || item.venue.city;
 
                 var result = resultsHash[index];
                 if (result === undefined) {
@@ -85,7 +90,7 @@ $(function () {
 
             });
 
-            console.log(resultsHash);
+            // console.log(resultsHash);
 
             if (resultsHash.length <= 0) {
                 return;

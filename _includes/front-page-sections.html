@@ -1,8 +1,8 @@
 {% assign posts = site.posts | sort:"index" %}
 {% for post in posts %}
 <section id="{{ post.cssId }}" class="row">
-    <h1>{{ post.title }}</h1>
-    <article>
+    <h1 class="col-xs-12">{{ post.title }}</h1>
+    <article class="col-xs-12">
         {{ post.content }}
     </article>
 </section>

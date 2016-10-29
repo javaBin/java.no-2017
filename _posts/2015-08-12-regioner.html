@@ -1,28 +1,36 @@
 ---
-title:  Hvor er vi?
-cssId:  regioner
+title:  Hvor
+cssId:  locations
 date:   2015-08-12 01:29
 index:  2
 image:  /img/kart-norge.png
 ---
 
-{% assign index = 0 %}
-{% for region in regions %}
-{% assign index = index | plus: 1 %}
+<div class="row">
+        <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.500326864898!2d10.72956021590623!3d59.923839681870824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e78366969f3%3A0x33b03851acb92609!2sTeknologihuset!5e0!3m2!1sen!2spl!4v1477753405429" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen scrollwheel="false"></iframe>
+    <div class="col-md-12">
 
-<section>
-    <h2>{{ region.region }}</h2>
-    <div>
-        <p>{{ region.description }}</p>
-        <address>
-            <p><strong>Når:</strong> {{ region.when }}</p>
+        <!--{% assign index = 0 %}-->
+        <!--{% for region in regions %}-->
+        <!--{% assign index = index | plus: 1 %}-->
 
-            <p><strong>Hvor:</strong> {{ region.where }}</p>
-        </address>
-        <p>
-            Informasjon om fagkvelder og påmelding finner du på
-            <a href="http://www.meetup.com/{{ region.meetupUrl }}">javaBin {{ region.region }}s gruppe på Meetup.com</a>
-        </p>
+        <!--<section>-->
+            <!--<h2>{{ region.region }}</h2>-->
+            <!--<div>-->
+                <!--<p>{{ region.description }}</p>-->
+                <!--<address>-->
+                    <!--<p><strong>Når:</strong> {{ region.when }}</p>-->
+
+                    <!--<p><strong>Hvor:</strong> {{ region.where }}</p>-->
+                <!--</address>-->
+                <!--<p>-->
+                    <!--Informasjon om fagkvelder og påmelding finner du på-->
+                    <!--<a href="http://www.meetup.com/{{ region.meetupUrl }}">javaBin {{ region.region }}s gruppe på-->
+                        <!--Meetup.com</a>-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</section>-->
+        <!--{% endfor %}-->
+
     </div>
-</section>
-{% endfor %}
+</div>

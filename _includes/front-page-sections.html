@@ -1,9 +1,14 @@
 {% assign posts = site.posts | sort:"index" %}
 {% for post in posts %}
-<section id="{{ post.cssId }}" class="row">
-    <h1 class="col-xs-12">{{ post.title }}</h1>
-    <article class="col-xs-12">
+<section id="{{ post.cssId }}" class="{% cycle '', 'bg-light-gray' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="section-heading">{{ post.title }}</h1>
+                <h4 class="text-muted">{{ post.subTitle }}</h4>
+            </div>
+        </div>
         {{ post.content }}
-    </article>
+    </div>
 </section>
 {% endfor %}

@@ -8,15 +8,12 @@
 <body>
 {% include menu.html %}
 
-<div class="container">
+{% include front-page-sections.html %}
 
-    {% include front-page-sections.html %}
+<footer>
+    {% include footer.html %}
+</footer>
 
-    <footer>
-        {% include footer.html %}
-    </footer>
-
-    {% include scripts.html %}
-</div> <!-- /container -->
+{% include scripts.html %}
 </body>
 </html>

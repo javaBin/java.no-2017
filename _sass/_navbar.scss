@@ -1,0 +1,21 @@
+.navbar-header .navbar-toggle {
+    border: none;
+    background-color: transparent;
+
+    .icon-bar {
+        background-color: white;
+    }
+}
+
+.navbar-header .navbar-toggle:active,
+.navbar-header .navbar-toggle:focus,
+.navbar-header .navbar-toggle:hover {
+    border: none;
+    background-color: transparent;
+
+    .icon-bar {
+        background-color: #dfa941;
+    }
+}
+
+

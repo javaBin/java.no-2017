@@ -1,0 +1,85 @@
+a {
+    color: $jzSalmonRed; // jz salmon red
+}
+
+p {
+    text-align: justify;
+}
+
+.center-justified {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+ul#socialMedia {
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        font-size: 3em;
+        text-decoration: none !important;
+
+        span {
+            display: none;
+        }
+
+        &:hover {
+
+        }
+
+        &:before {
+            font-family: fontawesome;
+            margin-right: 0.3em;
+            height: 1em;
+            width: 1em;
+        }
+
+        &.facebook {
+            &:before {
+                content: "\f230";
+            }
+        }
+
+        &.github {
+            &:before {
+                content: "\f09b";
+            }
+        }
+
+        &.instagram {
+            &:before {
+                content: "\f16d";
+            }
+        }
+
+        &.twitter {
+            &:before {
+                content: "\f099";
+            }
+        }
+
+        &.vimeo {
+            &:before {
+                content: "\f27d";
+            }
+        }
+
+        &.javazone {
+            margin-left: 1rem;
+
+            &:before {
+                position: absolute;
+                height: 1.3rem;
+                padding-left: 1.6rem;
+                margin-left: -1.6rem;
+                content: " ";
+                background: url('http://2016.javazone.no/assets/favicon-96x96.png') no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+}

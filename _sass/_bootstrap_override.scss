@@ -1,12 +1,19 @@
-@import "variable.scss";
-
 * {
-  box-sizing: border-box;
+  //box-sizing: border-box;
 }
 
-.row {
+
+//nav.sticky {
+//  @extend .navbar-fixed-top;
+//}
+
+.list-group-item {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid grey;
+  border-left: none;
 }
 
-nav.sticky {
-  @extend .navbar-fixed-top;
+.list-group-item:last-child {
+  border: none;
 }

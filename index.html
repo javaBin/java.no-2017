@@ -39,7 +39,6 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-
 <div class="container">
 
     {% assign posts = site.posts | sort:"index" %}
@@ -52,14 +51,11 @@
     </section>
     {% endfor %}
 
-
     <footer>
-        {% include social-media.html %}
-        {% include external-links.html %}
+        {% include footer.html %}
     </footer>
 
     {% include scripts.html %}
-
 </div> <!-- /container -->
 </body>
 </html>

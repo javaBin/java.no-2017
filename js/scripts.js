@@ -5,6 +5,7 @@
 
 $(function () {
     var navbar = $("#navbar");
+
     function addSticky() {
         navbar.addClass("sticky");
     }
@@ -26,11 +27,11 @@ $(function () {
 
     $(window).scroll(mycketBraFraaga);
     /* Dette må fikles med... */
-/*    $("body").on({
-        "touchmove": mycketBraFraaga,
-        "touchstart": addSticky,
-        "touchend": removeSticky
-    });*/
+    /*    $("body").on({
+     "touchmove": mycketBraFraaga,
+     "touchstart": addSticky,
+     "touchend": removeSticky
+     });*/
 
     var sammy = $.sammy(function () {
             this.get('#:test', function () {
@@ -57,16 +58,21 @@ $(function () {
         type: "GET",
         dataType: "jsonp",
         success: function (data) {
+            const regionoverride = {
+                "javaBin-Sorlandet": "Sørlandet"
+            };
+
             var resultsHash = {};
+
+            moment.locale('no');
 
             $.each(data.results, function (i, item) {
 
-                moment.locale('no');
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
                 // item.available_rsvp = (item.rsvp_limit - item.yes_rsvp_count) || 0;
 
 
-                var index = item.venue.city;
+                var index = regionoverride[item.group.urlname] || item.venue.city;
 
                 var result = resultsHash[index];
                 if (result === undefined) {
@@ -77,10 +83,11 @@ $(function () {
 
                 resultsHash[index] = result;
 
-
             });
 
-            if(resultsHash.length <= 0) {
+            console.log(resultsHash);
+
+            if (resultsHash.length <= 0) {
                 return;
             }
 

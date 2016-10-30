@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/css/style.css"/>
-    <title>{{ site.title }}</title>
+    {% include head.html %}
 </head>
 <body>
-{{ content }}
-    <footer>
-        <ul>
-            <li><a href="https://github.com/javaBin" class="github">github</a></li>
-            <li><a href="https://twitter.com/javaBin" class="twitter">Twitter</a></li>
-            <li><a href="https://instagram.com/javabin/" class="instagram">Instagram</a></li>
-            <li><a href="https://www.facebook.com/javabin" class="facebook">Facebook</a></li>
-        </ul>
-    </footer>
+{% include menu.html %}
+
+{% include front-page-sections.html %}
+
+<footer>
+    {% include footer.html %}
+</footer>
+
+{% include scripts.html %}
 </body>
 </html>

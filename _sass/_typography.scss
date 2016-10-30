@@ -1,10 +1,9 @@
+
+
 a {
     color: $jzSalmonRed; // jz salmon red
 }
 
-p {
-    text-align: justify;
-}
 
 .center-justified {
     text-align: justify;
@@ -68,6 +67,12 @@ ul#socialMedia {
             }
         }
 
+        &.email {
+            &:before {
+                content: "\f0e0";
+            }
+        }
+
         &.javazone {
             margin-left: 1rem;
 
@@ -77,7 +82,7 @@ ul#socialMedia {
                 padding-left: 1.6rem;
                 margin-left: -1.6rem;
                 content: " ";
-                background: url('http://2016.javazone.no/assets/favicon-96x96.png') no-repeat;
+                //background: url('http://2016.javazone.no/assets/favicon-96x96.png') no-repeat;
                 background-size: contain;
             }
         }

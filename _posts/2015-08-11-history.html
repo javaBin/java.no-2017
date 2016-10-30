@@ -1,0 +1,102 @@
+---
+title:  Historie
+cssId:  history
+date:   2015-08-11 19:23
+index:  4
+image:  /img/javaBin_btn_tilWebside_0109_2.svg
+---
+
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="timeline">
+            {% for period in site.data.timeline.periods %}
+                <li class="{% cycle 'timeline-default', 'timeline-inverted' %}">
+                    <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="{{ period.imagePath }}">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>
+                                {{ period.title }}
+                            </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                {{ period.content }}
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-image">-->
+                    <!--<img class="img-circle img-responsive" src="http://placehold.it/150x150">-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>-->
+                            <!--1995 - 2000-->
+                        <!--</h4>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>-->
+                            <!--De månedlige møtene er en god måte å styrke markedet på java platformen, og er en arena for-->
+                            <!--å dele erfaringer og-->
+                            <!--informasjon i tillegg til å være en sosial arena som knytter kontakter på tvers av firmaer-->
+                            <!--og fagmiljøer.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li>-->
+                <!--<div class="timeline-image">-->
+                    <!--<img class="img-circle img-responsive" src="http://placehold.it/150x150">-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>-->
+                            <!--1995 - 2000-->
+                        <!--</h4>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>-->
+                            <!--javaBin arrangerer Norges største utviklerkonferanse, <a href="http://www.javazone.no">JavaZone</a>,-->
+                            <!--en gang i året.-->
+                            <!--avaZone samler utviklere og arkitekter fra hele Norge, og har foredragsholder både fra Norge-->
+                            <!--og fra utlandet.-->
+                            <!--JavaZone samlet i 2009 over 2 000 personer i Oslo Spektrum.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+            <!--<li class="timeline-inverted">-->
+                <!--<div class="timeline-image">-->
+                    <!--<img class="img-circle img-responsive" src="http://placehold.it/150x150">-->
+                <!--</div>-->
+                <!--<div class="timeline-panel">-->
+                    <!--<div class="timeline-heading">-->
+                        <!--<h4>-->
+                            <!--1995 - 2000-->
+                        <!--</h4>-->
+                    <!--</div>-->
+                    <!--<div class="timeline-body">-->
+                        <!--<p>-->
+                            <!--Java Brukergruppen i Norge ble første gang startet sommeren 1996 som et samarbeid mellom-->
+                            <!--<a href="http://web.archive.org/web/19961114171337/http://www.sdata.no/">Skrivervik Data</a>,-->
+                            <!--<a href="http://www.radio1.no/">Radio 1</a> og-->
+                            <!--<a href="http://web.archive.org/web/19961113062732/http://www0.sn.no/">Schibsted Nett</a>.-->
+                            <!--Formålet var å stå som arrangør av en Norsk-->
+                            <!--<a href="http://web.archive.org/web/19970619020307/www.java.no/javaBIN/nytt.html#nr9">applet-konkurrase</a>-->
+                            <!--etter mønster av en tilsvarende internasjonal konkurranse arrangert av SunSoft.-->
+                            <!--Brukergruppen døde deretter ut inntil ildsjeler tok initiativ til <a-->
+                                <!--href="http://www4.java.no/web/show.do?implId=14&articleid=296">stiftelse</a>.-->
+                        <!--</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>

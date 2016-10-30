@@ -59,7 +59,8 @@ $(function () {
         dataType: "jsonp",
         success: function (data) {
             const regionsnavnoverride = {
-                "javaBin-Sorlandet": "Sørlandet"
+                "javaBin-Sorlandet": "Sørlandet",
+                "javaBin-Vestfold": "Vestfold"
             };
 
             var resultsHash = {

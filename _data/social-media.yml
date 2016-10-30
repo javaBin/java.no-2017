@@ -1,0 +1,35 @@
+medias:
+  - title: Facebook
+    class: facebook
+    url: https://www.facebook.com/javabin
+    target: _blank
+
+  - title: GitHub
+    class: github
+    url: https://github.com/javaBin
+    target: _blank
+
+  - title: Instagram
+    class: instagram
+    url: https://instagram.com/javabin/
+    target: _blank
+
+  - title: Twitter
+    class: twitter
+    url: https://twitter.com/javaBin
+    target: _blank
+
+  - title: Vimeo
+    class: vimeo
+    url: https://vimeo.com/javabin
+    target: _blank
+
+  - title: LinkedIn
+    class: linkedin
+    url: http://linkedin.com/in/javabin
+    target: _blank
+
+  - title: Email
+    class: email
+    url: mailto:styret@java.no
+    target:

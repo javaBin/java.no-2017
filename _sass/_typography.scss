@@ -67,9 +67,21 @@ ul#socialMedia {
             }
         }
 
+        &.linkedin {
+            &:before {
+                content: "\f0e1";
+            }
+        }
+
         &.email {
             &:before {
                 content: "\f0e0";
+            }
+        }
+
+        &.meetup {
+            &:before {
+                content: "\f2e0";
             }
         }
 

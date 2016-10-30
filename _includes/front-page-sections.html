@@ -1,4 +1,18 @@
+
 {% assign posts = site.posts | sort:"index" %}
+
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Bli en del av noe stort</div>
+            <div class="intro-heading">javaBin</div>
+            <a href="#{{posts[0].cssId}}" class="page-scroll btn btn-xl">
+                Les om oss
+            </a>
+        </div>
+    </div>
+</header>
+
 {% for post in posts %}
 <section id="{{ post.cssId }}">
     <div class="container">

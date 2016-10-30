@@ -2,14 +2,12 @@
 layout: page
 title: Helteliste
 ---
-<section>
-  <div class="container-fluid">
-    <div class="row-centered">
+<section class="row-centered">
+    <div class="container-fluid">
       {% for image in site.static_files %}
           {% if image.path contains 'img/javabin/Helteliste' %}
               <img class="maximgsize imgmarginbottom" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
           {% endif %}
       {% endfor %}
     </div>
-  </div>
 </section>

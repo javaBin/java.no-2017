@@ -18,6 +18,14 @@
     width: 100%;
 }
 
+section {
+  &:nth-child(2n) {
+    background-color: $bg-light-gray;
+  }
+}
+
+
+
 a {
   &:before {
     font-family: fontawesome;

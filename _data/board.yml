@@ -7,30 +7,9 @@ members:
     linkedin:
     github:
 
-  - name: Janniche Haugen
-    img:  https://placekitten.com/300/300?image=8
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
-
-  - name: Espen Herseth Halvorsen
+  - name: Espen Halvorsen
     img:  https://placekitten.com/300/300?image=1
     region: Oslo
-    twitter:
-    linkedin:
-    github:
-
-  - name: Jaran Nilsen
-    img:  https://placekitten.com/300/300?image=10
-    region: Sørlandet
-    twitter:
-    linkedin:
-    github:
-
-  - name: Aleksander Stensby
-    img:  https://placekitten.com/300/300?image=15
-    region: Vestfold
     twitter:
     linkedin:
     github:
@@ -42,7 +21,7 @@ members:
     linkedin:
     github:
 
-  - name: Dervis M
+  - name: Dervis Mansuroglu
     img:  https://placekitten.com/300/300?image=9
     region: Oslo
     twitter:
@@ -51,13 +30,6 @@ members:
 
   - name: Henrik Nordvik
     img:  https://placekitten.com/300/300?image=8
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
-
-  - name: Håkon Botnmark Jahre
-    img:  https://placekitten.com/300/300?image=1
     region: Oslo
     twitter:
     linkedin:
@@ -90,3 +62,18 @@ members:
     twitter:
     linkedin:
     github:
+
+    name: Eivind Hyldmo
+    img:  https://placekitten.com/300/300?image=14
+    region: Oslo
+    twitter:
+    linkedin:
+    github:
+
+    name: Ingar Abrahamsen
+    img:  https://placekitten.com/300/300?image=14
+    region: Oslo
+    twitter:
+    linkedin:
+    github:
+

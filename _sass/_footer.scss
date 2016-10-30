@@ -1,0 +1,19 @@
+footer {
+    padding: 25px 0;
+    text-align: center;
+
+    & span.copyright {
+        line-height: 40px;
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        text-transform: none;
+    }
+
+    & ul.quicklinks {
+        margin-bottom: 0;
+        line-height: 40px;
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        text-transform: none;
+    }
+}

@@ -15,11 +15,10 @@ section {
         font-weight: 400;
         margin-bottom: 75px;
     }
-    //section {
-    //    &:nth-child(2n) {
-    //        background-color: $bg-light-gray;
-    //    }
-    //}
+
+    &:nth-child(2n) {
+        background-color: $lightGray;
+    }
 }
 
 @media (min-width: 768px) {

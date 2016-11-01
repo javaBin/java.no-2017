@@ -29,11 +29,6 @@ medias:
     url: https://linkedin.com/groups/107562
     target: _blank
 
-  - title: Reddit
-    class: fa fa-reddit
-    url: http://reddit.com/r/javaBin
-    target: _blank
-
   - title: Email
     class: fa fa-envelope
     url: mailto:styret@java.no

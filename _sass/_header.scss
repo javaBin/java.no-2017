@@ -1,5 +1,5 @@
 header {
-    background-image: url('/img/banner/Polygon_uhd.jpg');
+    background-image: url('/img/banner/bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -31,7 +31,7 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
     header .intro-text .intro-lead-in {

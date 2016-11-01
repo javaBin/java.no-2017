@@ -20,3 +20,7 @@ Fil og mappestrukturen som er i bruk, er standard Jekyll-struktur.
 ## Generering av sider
 Sidene blir automatisk generert på GitHub, men lokalt på maskinen brukes
 *jekyll serve*
+
+* [Installer](http://jekyllrb.com/docs/installation/) Jekyll
+* Sjekk ut koden fra utviklingsbranchen
+* [Start](http://jekyllrb.com/docs/usage/) Jekyll

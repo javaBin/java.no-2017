@@ -1,5 +1,5 @@
 ---
-title:  Hvor
+title:  Regioner
 cssId:  locations
 date:   2015-08-12 01:29
 index:  5
@@ -17,12 +17,15 @@ image:  /img/kart-norge.png
         <div>
             <p>{{ region.description }}</p>
             <address>
-                <p class="text-muted">{{ region.when }}</p>
+                <strong>Meetups holdes:</strong> <p class="text-muted">{{ region.when }}</p>
 
-                <p class="text-muted">{{ region.where }}</p>
+                <strong>...som regel på dette stedet:</strong> <p class="text-muted">{{ region.where }}</p>
             </address>
-            <a href="http://www.meetup.com/{{ region.meetupUrl }}">javaBin {{ region.region }} - Meetup.com</a>
+
+            <strong>Du finner alle meetups her:</strong><br>
+            <a href="http://www.meetup.com/{{ region.meetupUrl }}">meetup.com/{{ region.meetupUrl }}</a>
         </div>
     </div>
 </div>
+<br>
 {% endfor %}

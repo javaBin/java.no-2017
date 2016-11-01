@@ -1,7 +1,7 @@
 regions:
   - region: Bergen
     meetupUrl: javaBin-Bergen
-    when:   "Rundt den 19. hver måned, kl. 18:00."
+    when:   "rundt den 19. hver måned, kl. 18:00."
     where:  <a href="http://maps.google.com/q=Norsk Eiendomsinformasjon, Markeveien 1B">Norsk Eiendomsinformasjon, Markeveien 1B</a>
 #    maps:   "Norsk Eiendomsinformasjon,Markeveien 1B,Bergen"
     maps:   "!1m14!1m8!1m3!1d1971.171935603259!2d5.322797999999999!3d60.392838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc029e13c95d%3A0xb2fcd09c480295c9!2sNorsk+Eiendomsinformasjon+avd.+Bergen!5e0!3m2!1sen!2s!4v1399806913485"
@@ -9,7 +9,7 @@ regions:
 
   - region: Oslo
     meetupUrl: javaBin
-    when:   "Varierende dag, kl. 18:00."
+    when:   "på varierende datoer, kl. 18:00."
     where:  <a href="http://maps.google.com/q=Teknologihuset, Pilestredet 56">Teknologihuset, Pilestredet 56</a>
 #    maps:  "Teknologihuset,Pilestredet,Oslo"
     maps:   "!1m14!1m8!1m3!1d1999.5003076945102!2d10.731749!3d59.92383999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e78366969f3%3A0x33b03851acb92609!2sTeknologihuset!5e0!3m2!1sen!2s!4v1399806824690"
@@ -17,7 +17,7 @@ regions:
 
   - region: Stavanger
     meetupUrl: javaBin-Stavanger
-    when:   "Varierende dag, kl. 18:00"
+    when:   "på varierende datoer, kl. 18:00"
     where:  "SKAGEN Fondene, Skagen 3"
 #    maps:   "SKAGEN Fondene,Skagen 3,Stavanger"
     maps:   "!1m14!1m8!1m3!1d2056.690507996136!2d5.7320269999999995!3d58.97013799999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3549bfac304f%3A0xc23f91d99c7da0b9!2sSKAGEN+Fondene!5e0!3m2!1sen!2s!4v1399806264359"
@@ -25,7 +25,7 @@ regions:
 
   - region: Sørlandet
     meetupUrl: javaBin-Sorlandet
-    when:   "Første onsdag i måneden, kl. 18:00."
+    when:   "første onsdag i måneden, kl. 18:00."
     where:  <a href="http://maps.google.com/q=Apotekergaarden, Grimstad">Apotekergaarden, Grimstad</a>
 #    maps:   "Apotekergaarden,Skolegaten,Grimstad"
     maps:   "!1m18!1m12!1m3!1d4061.4454336142235!2d8.593324539881776!3d58.34215211901385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10d522b52e791f51!2sApotekergaarden+-+Mad+%26+Leven+AS!5e0!3m2!1sen!2sus!4v1440743238274"
@@ -33,15 +33,15 @@ regions:
 
   - region: Trondheim
     meetupUrl: javaBin-Trondheim
-    when:   "Dag varierer, følg med på meetup.com"
-    where:  "Lokasjon varierer, følg med på meetup.com"
+    when:   "på varierende datoer og tidspunkter"
+    where:  "forskjellige lokasjoner"
 #    maps:   "Trondheim"
     maps:   "!1m18!1m12!1m3!1d57129.94270823441!2d10.438762149999999!3d63.41873620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319747037e53%3A0xbf7c8288f3cf3d4!2sTrondheim!5e0!3m2!1sen!2s!4v1399806504581"
     description: "javaBin Trondheim er regionslaget som dekker Trondheim og områdene rundt."
 
   - region: Vestfold
     meetupUrl: javaBin-Vestfold
-    when:   "Varierende dag, kl. 19:00"
+    when:   "på varierende datoer, kl. 19:00"
     where:  <a href="http://maps.google.com/q=Peppes Pizza, Tønsberg">Peppes Pizza, Tønsberg</a>
 #    maps:   "Peppes Pizza,Tønsberg"
     maps:   "!1m14!1m8!1m3!1d2038.9870725532942!2d10.406024999999998!3d59.26636500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646b7150981637d%3A0x7bbd10ff3e25a6dd!2sPeppes+Pizza+-+T%C3%B8nsberg!5e0!3m2!1sen!2s!4v1399806653430"

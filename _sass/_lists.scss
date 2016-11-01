@@ -1,0 +1,16 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    border-left: none;
+}
+
+.list-group-item:last-child {
+    border: none;
+}

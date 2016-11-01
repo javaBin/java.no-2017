@@ -1,3 +1,7 @@
-_site/
+_site
+.sass-cache
+
+.idea
+
 *.iml
-/.idea/
+Gemfile.lock

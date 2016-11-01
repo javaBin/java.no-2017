@@ -1,36 +1,25 @@
-javabin.github.com - java.no
-==================
+# Redesign av javaBins hjemmesider
+Dette er et oppsett der vi bruker Jekyll til å generere sidene. Jekyll er et verktøy som er laget i Ruby for å gjøre det 
+enkelt å lage "dynamiske" sider. Generering av sider foregår ved at Jekyll wrapper et forhåndsdefinert design rundt innlegg.
 
-javabin.github.com er repoet for http://java.no.
+## Oppsett
+Fil og mappestrukturen som er i bruk, er standard Jekyll-struktur.
+* _data: inneholder ekstra datafiler
+* _layouts: inneholder layouts som poster skal wrappes i. Man kan definere flere layouts ved å tagge dem forskjellig
+* _posts: inneholder poster, typisk bloggposter, men de kan brukes som man vil. Filene kan være rene HTML-filer eller Markdown
+* _site: inneholder statisk output som vises til sluttbruker
+* css: inneholder css. Dette er en egendefinert mappe og SASS brukes for å få struktur på filene
+* img: egendefinert mappe som inneholder bilder
 
-Siden består av enkle statiske HTML-sider.
-
-Hva trengs gjort med java.no?
------------------------------
-
-Ønsker du å hjelpe med å utvikle java.no? Ta tak i oppgavene som vi har definert her: https://github.com/javaBin/javabin.github.com/issues
-
-
-Hvordan legge til nye sider
----------------------------
-
-Sider lastes asynkront med ajax og injectes inn i index.html. For å lage nye sider, opprett en .html-fil under pages/
-og link til denne med index.html?page=navn_på_html_fila_uten_extension
-
-
-Problemer med cross-site scripting i Chrome
--------------------------------------------
-
-Får du problemer med at Chrome ikke tillater HTML-filene å laste via ajax, så kan du starte opp browseren med følgende parameter:
-
-    --allow-file-access-from-files
-
-Det skal fikse problemet.
+## Oppgaver som må gjøres
+* Utvikle et godt design
+* Finne gode bilder
+* Sette opp en fargepalett
 
 
-Utkiklingsbranch
-----------------
-Det finnes et eget branch for nyutvikling. Koden som ligger der bruker [Jekyll](https://jekyllrb.com/).
+## Generering av sider
+Sidene blir automatisk generert på GitHub, men lokalt på maskinen brukes
+*jekyll serve*
 
 * [Installer](http://jekyllrb.com/docs/installation/) Jekyll
 * Sjekk ut koden fra utviklingsbranchen

@@ -1,0 +1,9 @@
+.img-centered {
+    margin: 0 auto;
+}
+img::selection {
+    background: transparent;
+}
+img::-moz-selection {
+    background: transparent;
+}

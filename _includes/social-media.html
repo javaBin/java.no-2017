@@ -1,0 +1,9 @@
+<ul id="socialMedia">
+    {% for media in site.data.social-media.medias %}
+        <li>
+            <a href="{{ media.url }}" class="icon {{ media.class }}" target="{{ media.target }}">
+                <span>{{ media.title }}</span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+name: Historie
+periods:
+  - title: Bli aktiv i javaBin?
+    content: Vil du være med aktivt i javaBin, og lage meetups og JavaZone? I Oslo møtes vi hver tirsdag kl. 18.00 på <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo">Teknologihuset</a>, det er bare å dukke opp. I regionene møtes vi litt sjeldnere, møt opp på et meetup-arrangement og snakk med oss.
+    imagePath: /img/duke/viking_duke.svg
+
+  - title: Ideer til JavaZone?
+    content: javaBin har arrangert <a href="http://javazone.no">JavaZone</a> i 15 år nå. Ønsker du å bidra er du hjertelig velkommen til dette!. Ta kontakt med oss på <a href="mailto:javazone@java.no">javazone@java.no</a> om du har ideer eller vil være med.
+    imagePath: /img/logos/javazone-logo.jpg
+
+  - title: Liker du å kode? Bidra på GitHub!
+    content: javaBin drives av utviklere og det fører med seg at vi koder på en rekke prosjekter — alle Open Source og tilgjengelige på <a href="http://github.com/javabin">Github</a>.
+    imagePath: /img/logos/octocat.png

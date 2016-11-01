@@ -1,0 +1,31 @@
+---
+title:  Regioner
+cssId:  locations
+date:   2015-08-12 01:29
+index:  5
+image:  /img/kart-norge.png
+---
+
+{% assign index = 0 %}
+{% for region in site.data.locations.regions %}
+{% assign index = index | plus: 1 %}
+<div class="row">
+    <div class="col-md-12 center-justified">
+        <h3 class="text-muted">
+            {{ region.region }}
+        </h3>
+        <div>
+            <p>{{ region.description }}</p>
+            <address>
+                <strong>Meetups holdes:</strong> <p class="text-muted">{{ region.when }}</p>
+
+                <strong>...som regel på dette stedet:</strong> <p class="text-muted">{{ region.where }}</p>
+            </address>
+
+            <strong>Du finner alle meetups her:</strong><br>
+            <a href="http://www.meetup.com/{{ region.meetupUrl }}">meetup.com/{{ region.meetupUrl }}</a>
+        </div>
+    </div>
+</div>
+<br>
+{% endfor %}

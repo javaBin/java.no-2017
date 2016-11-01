@@ -1,13 +1,13 @@
 name: Historie
 periods:
-  - title: 1996
-    content: javaBin er en non- profit, uavhengig organisasjon. Formålet er å fremme java kompetanse blant medlemmer, medlemsbedrifter og markedet. javaBin har hovedkontor i Oslo, med undergrupper i Stavanger, Bergen, Trondheim, i Vestfold og på Sørlandet. I 2009 hadde gruppen over 2000 medlemmer fra over 210 firmaer. Fagmøtene består av kort informasjon fra ledelsen i javaBin, samt ett eller flere foredrag hentet fra medlemmer, medlemsbedrifter eller eksterne foredragsholdere. Møtene har godt oppmøte og samler kompetansepersoner med god bredde innenfor javautvikling.
-    imagePath: /img/bg_pattern.png
+  - title: javaBin
+    content: I javaBin søker vi hele tiden nye ildsjeler som ønsker å være med og bidra til å gjøre brukergruppen bedre og på best mulig måte spre kompetanse i utviklerbransjen i Norge. Dersom du ønsker å være med, er du hjertelig velkommen til å bli med på møtene vi har hver tirsdag kl 18:00 på <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo">Teknologihuset, Pilestredet 56, i Oslo</a>
+    imagePath: /img/duke/viking_duke.svg
 
-  - title: 2000
-    content: De månedlige møtene er en god måte å styrke markedet på java platformen, og er en arena for å dele erfaringer og informasjon i tillegg til å være en sosial arena som knytter kontakter på tvers av firmaer og fagmiljøer.
-    imagePath: /img/bg_pattern.png
+  - title: JavaZone
+    content: javaBin er arrangør av utviklerkonferansen JavaZone. Ønsker du å bidra er du hjertelig velkommen til å ta kontakt med oss på <a href="mailto:javazone@java.no">javazone@java.no</a>.
+    imagePath: /img/logos/javazone-logo.jpg
 
-  - title: 2006
-    content: asdfffja sdfj asdf asdf
-    imagePath: /img/bg_pattern.png
+  - title: Prosjekter
+    content: javaBin drives av utviklere og det fører med seg at vi driver en rekke prosjekter — alle Open Source og tilgjengelige på <a href="http://github.com/javabin">Github</a>.
+    imagePath: /img/logos/octocat.png

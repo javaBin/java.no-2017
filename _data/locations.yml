@@ -1,19 +1,20 @@
 regions:
+
+  - region: Oslo
+    meetupUrl: javaBin
+    when:   "på varierende datoer, kl. 18:00"
+    where:  <a href="https://www.google.no/maps/place/Teknologihuset">Teknologihuset, Pilestredet 56</a>
+#    maps:  "Teknologihuset,Pilestredet,Oslo"
+    maps:   "!1m14!1m8!1m3!1d1999.5003076945102!2d10.731749!3d59.92383999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e78366969f3%3A0x33b03851acb92609!2sTeknologihuset!5e0!3m2!1sen!2s!4v1399806824690"
+    description: "javaBin Oslo arrangerer fagkvelder i Oslo"
+
   - region: Bergen
     meetupUrl: javaBin-Bergen
-    when:   "rundt den 19. hver måned, kl. 18:00."
+    when:   "rundt den 19. hver måned, kl. 18:00"
     where:  <a href="https://www.google.no/maps/place/Markeveien+1B,+5012+Bergen">Norsk Eiendomsinformasjon, Markeveien 1B</a>
 #    maps:   "Norsk Eiendomsinformasjon,Markeveien 1B,Bergen"
     maps:   "!1m14!1m8!1m3!1d1971.171935603259!2d5.322797999999999!3d60.392838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc029e13c95d%3A0xb2fcd09c480295c9!2sNorsk+Eiendomsinformasjon+avd.+Bergen!5e0!3m2!1sen!2s!4v1399806913485"
     description: "javaBin Bergen er regionslaget som dekker Bergen og områdene rundt."
-
-  - region: Oslo
-    meetupUrl: javaBin
-    when:   "på varierende datoer, kl. 18:00."
-    where:  <a href="https://www.google.no/maps/place/Teknologihuset">Teknologihuset, Pilestredet 56</a>
-#    maps:  "Teknologihuset,Pilestredet,Oslo"
-    maps:   "!1m14!1m8!1m3!1d1999.5003076945102!2d10.731749!3d59.92383999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e78366969f3%3A0x33b03851acb92609!2sTeknologihuset!5e0!3m2!1sen!2s!4v1399806824690"
-    description: "javaBin Oslo arrangerer fagkvelder i Oslo."
 
   - region: Stavanger
     meetupUrl: javaBin-Stavanger
@@ -25,7 +26,7 @@ regions:
 
   - region: Sørlandet
     meetupUrl: javaBin-Sorlandet
-    when:   "første onsdag i måneden, kl. 18:00."
+    when:   "første onsdag i måneden, kl. 18:00"
     where:  <a href="https://www.google.no/maps/place/Apotekergaarden+-+Mad+%26+Leven+AS">Apotekergaarden, Grimstad</a>
 #    maps:   "Apotekergaarden,Skolegaten,Grimstad"
     maps:   "!1m18!1m12!1m3!1d4061.4454336142235!2d8.593324539881776!3d58.34215211901385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10d522b52e791f51!2sApotekergaarden+-+Mad+%26+Leven+AS!5e0!3m2!1sen!2sus!4v1440743238274"

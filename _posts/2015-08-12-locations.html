@@ -17,12 +17,25 @@ image:  /img/kart-norge.png
         <div>
             <p>{{ region.description }}</p>
             <address>
-                <strong>Meetups holdes:</strong> <p class="text-muted">{{ region.when }}</p>
+                <strong class="text-muted">
+                    Meetups holdes:
+                </strong>
+                <p class="text-muted">
+                    {{ region.when }}
+                </p>
 
-                <strong>...som regel på dette stedet:</strong> <p class="text-muted">{{ region.where }}</p>
+                <strong class="text-muted">
+                    ...som regel på dette stedet:
+                </strong>
+                <p class="text-muted">
+                    {{ region.where }}
+                </p>
             </address>
 
-            <strong>Du finner alle meetups her:</strong><br>
+            <strong class="text-muted">
+                Du finner alle meetups her:
+            </strong>
+            <br>
             <a href="http://www.meetup.com/{{ region.meetupUrl }}">meetup.com/{{ region.meetupUrl }}</a>
         </div>
     </div>

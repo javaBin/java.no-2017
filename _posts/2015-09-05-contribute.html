@@ -10,20 +10,20 @@ image:  /img/javaBin_btn_tilWebside_0109_2.svg
 <div class="row">
     <div class="col-md-12">
         <ul class="timeline">
-            {% for period in site.data.timeline.periods %}
+            {% for item in site.data.contribute.items %}
             <li class="{% cycle 'timeline-default', 'timeline-inverted' %}">
                 <div class="timeline-image">
-                    <img class="img-circle img-responsive" src="{{ period.imagePath }}">
+                    <img class="img-circle img-responsive" src="{{ item.imagePath }}">
                 </div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>
-                            {{ period.title }}
+                            {{ item.title }}
                         </h4>
                     </div>
                     <div class="timeline-body">
                         <p>
-                            {{ period.content }}
+                            {{ item.content }}
                         </p>
                     </div>
                 </div>
@@ -32,17 +32,3 @@ image:  /img/javaBin_btn_tilWebside_0109_2.svg
         </ul>
     </div>
 </div>
-
-
-<!--<div class="row">-->
-    <!--<div class="col-md-12 center-justified">-->
-        <!--{% for item in site.data.contribute.items %}-->
-        <!--<h4 class="text-muted">-->
-            <!--{{ item.title }}-->
-        <!--</h4>-->
-        <!--<p>-->
-            <!--{{ item.content }}-->
-        <!--</p>-->
-        <!--{% endfor %}-->
-    <!--</div>-->
-<!--</div>-->

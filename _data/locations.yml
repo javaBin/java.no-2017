@@ -10,10 +10,11 @@ regions:
 
   - region: Bergen
     meetupUrl: javaBin-Bergen
-    when:   "rundt den 19. hver måned, kl. 18:00"
-    where:  <a href="https://www.google.no/maps/place/Markeveien+1B,+5012+Bergen">Norsk Eiendomsinformasjon, Markeveien 1B</a>
+    when:   "tredje torsdag hver måned, kl. 18:00"
+    where:  <a href="https://www.google.no/maps/place/Damsgårdsveien+50,+5058+Bergen">Delfi Data, Damsgårdsveien 50</a>
 #    maps:   "Norsk Eiendomsinformasjon,Markeveien 1B,Bergen"
-    maps:   "!1m14!1m8!1m3!1d1971.171935603259!2d5.322797999999999!3d60.392838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc029e13c95d%3A0xb2fcd09c480295c9!2sNorsk+Eiendomsinformasjon+avd.+Bergen!5e0!3m2!1sen!2s!4v1399806913485"
+#    maps:   "!1m14!1m8!1m3!1d1971.171935603259!2d5.322797999999999!3d60.392838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc029e13c95d%3A0xb2fcd09c480295c9!2sNorsk+Eiendomsinformasjon+avd.+Bergen!5e0!3m2!1sen!2s!4v1399806913485"
+    maps:   "!1m18!1m12!1m3!1d1972.0342133675435!2d5.324966016114925!3d60.378594682038205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cf9546c8b5edb%3A0x1442d46174a41f75!2sDamsg%C3%A5rdsveien+50%2C+5058+Bergen!5e0!3m2!1sen!2sno!4v1478280961907"
     description: "javaBin Bergen er regionslaget som dekker Bergen og områdene rundt."
 
   - region: Stavanger

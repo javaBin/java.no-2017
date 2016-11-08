@@ -52,13 +52,14 @@ $(function () {
         }
     );
 
-    var url = "http://api.meetup.com/2/events?group_id=7480032%2C8449272%2C7371452%2C4060032%2C10847532%2C1764379&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&sig_id=14499833&sig=5cd7131eecfb2f8b4581762dd8c58c77c266d23d";
+    var url = "//api.meetup.com/2/events?group_id=7480032%2C8449272%2C7371452%2C4060032%2C10847532%2C1764379&status=upcoming&order=time&limited_events=False&desc=false&offset=0&format=json&page=20&fields=&sig_id=14499833&sig=5cd7131eecfb2f8b4581762dd8c58c77c266d23d";
     $.ajax({
         url: url,
         type: "GET",
         dataType: "jsonp",
         success: function (data) {
             const regionsnavnoverride = {
+                "javaBin-Bergen": "Bergen",
                 "javaBin-Sorlandet": "Sørlandet",
                 "javaBin-Vestfold": "Vestfold"
             };
@@ -74,11 +75,18 @@ $(function () {
 
             moment.locale('no');
 
+            console.log(data.results);
+
             $.each(data.results, function (i, item) {
 
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
 
-                var index = regionsnavnoverride[item.group.urlname] || item.venue.city;
+                var city = "Ukjent";
+                if(item.venue !== undefined) {
+                    city = item.venue.city;
+                }
+
+                var index = regionsnavnoverride[item.group.urlname] || city;
 
                 var result = resultsHash[index];
                 if (result === undefined) {

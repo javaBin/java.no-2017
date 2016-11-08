@@ -18,7 +18,7 @@ regions:
   - region: Stavanger
     meetupUrl: javaBin-Stavanger
     when:   "på varierende datoer, kl. 18:00"
-    where:  <a href="https://www.google.no/maps/place/Skagen+3,+4006+Stavanger">Skagen 3, 4006 Stavanger
+    where:  <a href="https://www.google.no/maps/place/Skagen+3,+4006+Stavanger">Skagen 3, 4006 Stavanger</a>
 #    maps:   "SKAGEN Fondene,Skagen 3,Stavanger"
     maps:   "!1m14!1m8!1m3!1d2056.690507996136!2d5.7320269999999995!3d58.97013799999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3549bfac304f%3A0xc23f91d99c7da0b9!2sSKAGEN+Fondene!5e0!3m2!1sen!2s!4v1399806264359"
     description: "javaBin Stavanger er regionslaget som dekker Stavanger og områdene rundt."

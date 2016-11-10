@@ -59,8 +59,11 @@ $(function () {
         dataType: "jsonp",
         success: function (data) {
             const regionsnavnoverride = {
+                "javaBin-Oslo": "Oslo",
                 "javaBin-Bergen": "Bergen",
+                "javaBin-Stavanger": "Stavanger",
                 "javaBin-Sorlandet": "Sørlandet",
+                "javaBin-Trondheim": "Trondheim",
                 "javaBin-Vestfold": "Vestfold"
             };
 
@@ -81,7 +84,7 @@ $(function () {
 
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
 
-                var city = "Ukjent";
+                var city = "Ukjent region";
                 if(item.venue !== undefined) {
                     city = item.venue.city;
                 }

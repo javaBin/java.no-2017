@@ -1,0 +1,25 @@
+pages:
+  - page: About
+    fileName: about.html
+    title: about
+    cssId: about
+
+  - page: Board
+    fileName: board.html
+    title: board
+    cssId: board
+
+  - page: Regions
+    pageName: locations.html
+    title: regions
+    cssId: regions
+
+  - page: Meetup
+    pageName: meetup.html
+    title: meetup
+    cssId: meetup
+
+  - page: Contribute
+    pageName: contribute.html
+    title: contribute
+    cssId: contribute

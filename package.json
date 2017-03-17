@@ -1,0 +1,9 @@
+{
+  "name": "javabin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve --config _config.yml"
+  }
+}

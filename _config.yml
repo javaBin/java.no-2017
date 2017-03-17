@@ -2,8 +2,7 @@
 title: javaBin &mdash; Hjemmesiden til Javabrukerforeningen i Norge
 email: aktive@java.no
 
-description: > # this means to ignore newlines until "baseurl:"
-    javaBin, Javabrukerforeningen i Norge,
+description: javaBin, Javabrukerforeningen i Norge,
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://java.no" # the base hostname & protocol for your site
@@ -15,6 +14,12 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+collections:
+  en:
+    output: true
+  nb:
+    output: true
 
 #gems:
 #  - jekyll-autoprefixer

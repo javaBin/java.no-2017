@@ -1,0 +1,48 @@
+regions:
+
+  - region: Oslo
+    meetupUrl: javaBin
+    when:   "on varying dates, 18:00 PM"
+    where:  <a href="https://www.google.no/maps/place/Teknologihuset">Teknologihuset, Pilestredet 56</a>
+#    maps:  "Teknologihuset,Pilestredet,Oslo"
+    maps:   "!1m14!1m8!1m3!1d1999.5003076945102!2d10.731749!3d59.92383999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e78366969f3%3A0x33b03851acb92609!2sTeknologihuset!5e0!3m2!1sen!2s!4v1399806824690"
+    description: "javaBin Oslo organizes meetups in Oslo"
+
+  - region: Bergen
+    meetupUrl: javaBin-Bergen
+    when:   "third Thursday each month, 18:00 PM"
+    where:  <a href="https://www.google.no/maps/place/Damsgårdsveien+50,+5058+Bergen">Delfi Data, Damsgårdsveien 50</a>
+    maps:   "!1m18!1m12!1m3!1d1972.0342133675435!2d5.324966016114925!3d60.378594682038205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cf9546c8b5edb%3A0x1442d46174a41f75!2sDamsg%C3%A5rdsveien+50%2C+5058+Bergen!5e0!3m2!1sen!2sno!4v1478280961907"
+    description: "javaBin Bergen is the branch covering Bergen and surrounding areas."
+
+  - region: Stavanger
+    meetupUrl: javaBin-Stavanger
+    when:   "on varying dates, 18:00 PM"
+    where:  <a href="https://www.google.no/maps/place/Skagen+3,+4006+Stavanger">Skagen 3, 4006 Stavanger</a>
+#    maps:   "SKAGEN Fondene,Skagen 3,Stavanger"
+    maps:   "!1m14!1m8!1m3!1d2056.690507996136!2d5.7320269999999995!3d58.97013799999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3549bfac304f%3A0xc23f91d99c7da0b9!2sSKAGEN+Fondene!5e0!3m2!1sen!2s!4v1399806264359"
+    description: "javaBin Stavanger is branch covering Stavanger and surrounding areas."
+
+  - region: Sørlandet
+    meetupUrl: javaBin-Sorlandet
+    when:   "first Wednesday of each month, 18:00 PM"
+    where:  <a href="https://www.google.no/maps/place/Apotekergaarden+-+Mad+%26+Leven+AS">Apotekergaarden, Grimstad</a>
+#    maps:   "Apotekergaarden,Skolegaten,Grimstad"
+    maps:   "!1m18!1m12!1m3!1d4061.4454336142235!2d8.593324539881776!3d58.34215211901385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10d522b52e791f51!2sApotekergaarden+-+Mad+%26+Leven+AS!5e0!3m2!1sen!2sus!4v1440743238274"
+    description: "javaBin Sørlandet is the branch covering mainly Kristiansand, Grimstad og Arendal."
+
+  - region: Trondheim
+    meetupUrl: javaBin-Trondheim
+    when:   "on varying dates and times"
+    where:  "different locations"
+#    maps:   "Trondheim"
+    maps:   "!1m18!1m12!1m3!1d57129.94270823441!2d10.438762149999999!3d63.41873620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319747037e53%3A0xbf7c8288f3cf3d4!2sTrondheim!5e0!3m2!1sen!2s!4v1399806504581"
+    description: "javaBin Trondheim is branch covering Trondheim and surrounding areas."
+
+  - region: Vestfold
+    meetupUrl: javaBin-Vestfold
+    when:   "on varying dates, 19:00 PM"
+    where:  <a href="https://www.google.no/maps/place/Peppes+Pizza+-+Tønsberg">Peppes Pizza, Tønsberg</a>
+#    maps:   "Peppes Pizza,Tønsberg"
+    maps:   "!1m14!1m8!1m3!1d2038.9870725532942!2d10.406024999999998!3d59.26636500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646b7150981637d%3A0x7bbd10ff3e25a6dd!2sPeppes+Pizza+-+T%C3%B8nsberg!5e0!3m2!1sen!2s!4v1399806653430"
+    description: "javaBin Vestfold is the branch covering mainly Larvik, Sandefjord og Tønsberg."

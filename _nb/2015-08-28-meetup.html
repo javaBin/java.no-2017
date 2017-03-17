@@ -1,0 +1,37 @@
+---
+title:  Neste meetups
+cssId:  meetup
+date:   2015-08-28 20:26
+index:  3
+image:  http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png
+---
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <article id="replaceMeetupList">
+            Vi har for tiden ingen eventer&hellip;
+            <small>Psst&hellip; eventuelt har du skrudd av JavaScript</small>
+        </article>
+    </div>
+</div>
+
+<script type="text/x-jsrender" id="meetupTemplate">
+{% raw %}
+{{props #data}}
+    {{if prop}}
+        <article class="meetup">
+            <h2>{{>key}}</h2>
+            <ul>
+            {{for prop}}
+                <li>
+                    <h3><a href="{{:event_url}}">{{:name}}</a></h3>
+                    <p>{{:time}}</p>
+                </li>
+            {{/for}}
+            </ul>
+        </article>
+        <br>
+    {{/if}}
+{{/props}}
+{% endraw %}
+</script>

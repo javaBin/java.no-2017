@@ -1,0 +1,28 @@
+
+{% assign posts = site.en | sort:"index" %}
+
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Become part of something great</div>
+            <div class="intro-heading">javaBin</div>
+            <a href="#{{posts[0].cssId}}" class="page-scroll btn btn-xl">
+                Read more about us
+            </a>
+        </div>
+    </div>
+</header>
+
+{% for post in posts %}
+<section id="{{ post.cssId }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="section-heading">{{ post.title }}</h1>
+                <!--<h4 class="text-muted">{{ post.subTitle }}</h4>-->
+            </div>
+        </div>
+        {{ post.content }}
+    </div>
+</section>
+{% endfor %}

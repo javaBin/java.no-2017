@@ -14,11 +14,11 @@ up to date at any point of time.
 javaBin is one of the largest community groups in Norway. It is driven by
 volunteer enthusiasts from across the country. We have branches throughout the
 country - Stavanger, Bergen, Trondheim, Vestfold, Southern Norway and Oslo.
-We organize events almost every month in all javaBin branches - both meetups,
+We organize events almost every month in all javaBin branches - both [meetups](https://www.meetup.com/javabin/),
 student events, events for kids, and much more exciting stuff!
 
-We also host one of the biggest Java conferences that is run by a non-profit
-organization.
+We also host one of the biggest Java conferences, [JavaZone](https://javazone.no) that is run by a 
+non-profit organization. 
 
 ### 2. Modification of Terms
 

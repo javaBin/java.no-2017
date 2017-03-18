@@ -1,24 +1,29 @@
 ## Disclaimer and Limitation of Liability - Terms and Conditions
 
 These Terms and Conditions (“Terms”) apply to any and all use of services and
-information related to "javaBin" or "JavaZone". You should make sure
-that you read through the Terms carefully before using our apps or services.
-By using our applications or services, you agree to have read and understood
-the Terms and that you accept that they are binding to you.
+information related to "javaBin" or "JavaZone", hereby referred to as "javaBin".
+You should make sure that you read through the Terms carefully before using our 
+application or services. By using our applications or services, you agree to 
+have read and understood the Terms and that you accept that they are binding to 
+you.
 
 Warning: javaBin does not guarantee the accuracy of the contents or that it is
 up to date at any point of time.
 
-### 1. About javaBin
-
+### 1. About 
+#### [javaBin](https://java.no)
 javaBin is one of the largest community groups in Norway. It is driven by
 volunteer enthusiasts from across the country. We have branches throughout the
-country - Stavanger, Bergen, Trondheim, Vestfold, Southern Norway and Oslo.
-We organize events almost every month in all javaBin branches - both [meetups](https://www.meetup.com/javabin/),
-student events, events for kids, and much more exciting stuff!
+country – Stavanger, Bergen, Trondheim, Vestfold, Southern Norway and Oslo.
 
-We also host one of the biggest Java conferences, [JavaZone](https://javazone.no) that is run by a 
-non-profit organization. 
+javaBin organizes meetups, student events, and technology related events for kids 
+in all javaBin branches.
+
+#### [JavaZone](https://javazone.no)
+JavaZone is an independent conference and a forum for knowledge exchange,
+recruitment and branding.
+
+javaBin is the organization hosting the conference.
 
 ### 2. Modification of Terms
 

@@ -1,0 +1,10 @@
+---
+layout: basic
+---
+
+<div class="container policy">
+  <div style="padding: 60px"></div>
+  {% capture my_include %}{% include eng_policy.md %}{% endcapture %}
+  {{ my_include | markdownify }}
+</div>
+<div style="padding-bottom: 60px"></div>

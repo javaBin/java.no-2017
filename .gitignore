@@ -1,7 +1,9 @@
 _site
 .sass-cache
 
-.idea
+.idea/
 
 *.iml
 Gemfile.lock
+
+npm-debug.log

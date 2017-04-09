@@ -1,22 +1,22 @@
 name: Contribute
 items:
-  - title: Become an active member of javaBin?
+  - title: Want to become an active member of javaBin?
     content:
-        Want to join actively in javaBin and organize meetups and JavaZone? In Oslo, we meet every Tuesday
-        18:00 PM at <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo">Teknologihuset</a>,
-        just show up at one of our evenings. In the regions we meet less frequently - show up at a
-        meetup event and talk with us.
+        Want to join javaBin and help us organizing meetups and JavaZone? In Oslo, we meet every Tuesday
+        18:00 PM at <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo">Teknologihuset</a>.
+        You are welcome to join us on one of the Tuesdays. In other regions we meet less frequently – just show up at
+        one of our events and say hi.
     imagePath: /img/duke/viking_duke.svg
 
   - title: Ideas for JavaZone?
     content:
-        javaBin has organized <a href="http://javazone.no">JavaZone</a> for 15 years. If you want to contribute,
+        javaBin has been organizing <a href="http://javazone.no">JavaZone</a> for over 15 years. If you want to contribute there,
         you are more than welcome to join us! Please contact us at <a href="mailto:javazone@java.no">javazone@java.no</a>
-        if you have ideas or want to join.
+        if you have any ideas, or want to join the crew.
     imagePath: /img/logos/javazone-logo.jpg
 
   - title: Do you like to code? Contribute on GitHub!
     content:
-        javaBin is run by volunteery developers and because of that we code on a variety of projects - all of which
-        are Open Source and available on <a href="http://github.com/javabin">Github</a>.
+        javaBin is run by volunteer developers. This means that we develop most of our systems ourselves – all of them 
+        are open source and available on <a href="http://github.com/javabin">Github</a>.
     imagePath: /img/logos/octocat.png

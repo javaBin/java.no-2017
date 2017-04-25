@@ -18,20 +18,22 @@ image:  http://img2.meetupstatic.com/img/8308650022681532654/header/logo-2x.png
 <script type="text/x-jsrender" id="meetupTemplate">
 {% raw %}
 {{props #data}}
+    <article class="meetup">
+    <h2>{{>key}}</h2>
     {{if prop}}
-        <article class="meetup">
-            <h2>{{>key}}</h2>
-            <ul>
-            {{for prop}}
-                <li>
-                    <h3><a href="{{:event_url}}">{{:name}}</a></h3>
-                    <p>{{:time}}</p>
-                </li>
-            {{/for}}
-            </ul>
-        </article>
-        <br>
+        <ul>
+        {{for prop}}
+            <li>
+                <h3><a href="{{:event_url}}">{{:name}}</a></h3>
+                <p>{{:time}}</p>
+            </li>
+        {{/for}}
+        </ul>
+    {{else}}
+        <p>What about proposing a meetup at <a href="//meetup.com">meetup.com</a>?</p>
     {{/if}}
+    </article>
+    <br>
 {{/props}}
 {% endraw %}
 </script>

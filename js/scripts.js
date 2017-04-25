@@ -78,7 +78,7 @@ $(function () {
 
             moment.locale('no');
 
-            console.log(data.results);
+            //console.log(data.results);
 
             $.each(data.results, function (i, item) {
 
@@ -102,7 +102,7 @@ $(function () {
 
             });
 
-            // console.log(resultsHash);
+            //console.log(resultsHash);
 
             if (resultsHash.length <= 0) {
                 return;

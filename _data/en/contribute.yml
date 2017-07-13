@@ -2,10 +2,10 @@ name: Contribute
 items:
   - title: Want to become an active member of javaBin?
     content:
-        Want to join javaBin and help us organizing meetups and JavaZone? In Oslo, we meet every Tuesday
-        18:00 PM at <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo">Teknologihuset</a>.
-        You are welcome to join us on one of the Tuesdays. In other regions we meet less frequently – just show up at
-        one of our events and say hi.
+        Want to join javaBin and help us to organize meetups and JavaZone? In Oslo we meet at 18:00 every Tuesday at 
+        <a href="https://www.google.com/maps/place/Pilestredet+56,+0167+Oslo">Teknologihuset</a>; other regions meet 
+        less frequently, so check out your region's upcoming events for more details. Just show up at any of the meetings 
+        or scheduled meetups and say hi!
     imagePath: /img/duke/viking_duke.svg
 
   - title: Ideas for JavaZone?

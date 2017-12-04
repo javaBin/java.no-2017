@@ -1,0 +1,12 @@
+---
+layout: cal
+---
+{% assign calendarcontent = site.calendarcontent | sort:"index" %}
+
+{% for cal in calendarcontent %}
+<section id="{{ cal.cssId }}">
+    <div class="container">
+        {{ cal.content }}
+    </div>
+</section>
+{% endfor %}

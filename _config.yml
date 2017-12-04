@@ -18,8 +18,6 @@ sass:
 collections:
   en:
     output: true
-  blog:
-    output: true
   calendarcontent:
     output: true
 

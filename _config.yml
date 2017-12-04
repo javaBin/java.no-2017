@@ -18,6 +18,8 @@ sass:
 collections:
   en:
     output: true
+  calendarcontent:
+    output: true
 
 #gems:
 #  - jekyll-autoprefixer

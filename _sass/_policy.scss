@@ -8,4 +8,11 @@
   p {
     text-align: justify;
   }
+
+  ul {
+    list-style-type: circle;
+    list-style-position: outside;
+  	padding-left: 40px;
+  	padding-bottom: 16px;
+  }
 }

@@ -1,0 +1,10 @@
+---
+layout: basic
+---
+
+<div class="container principles">
+  <div style="padding: 60px"></div>
+  {% capture my_include %}{% include eng_principles.md %}{% endcapture %}
+  {{ my_include | markdownify }}
+</div>
+<div style="padding-bottom: 60px"></div>

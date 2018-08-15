@@ -16,11 +16,12 @@ Fil og mappestrukturen som er i bruk, er standard Jekyll-struktur.
 * Finne gode bilder
 * Sette opp en fargepalett
 
-
 ## Generering av sider
 Sidene blir automatisk generert på GitHub, men lokalt på maskinen brukes
 *jekyll serve*
-
 * [Installer](http://jekyllrb.com/docs/installation/) Jekyll
 * Sjekk ut koden fra utviklingsbranchen
 * [Start](http://jekyllrb.com/docs/usage/) Jekyll
+
+## Produkteier
+Denne siden 'eies' av [javaBin Styret](mailto.styret@java.no).

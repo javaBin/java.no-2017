@@ -24,4 +24,4 @@ Sidene blir automatisk generert på GitHub, men lokalt på maskinen brukes
 * [Start](http://jekyllrb.com/docs/usage/) Jekyll
 
 ## Produkteier
-Denne siden 'eies' av [javaBin Styret](mailto.styret@java.no).
+Denne siden 'eies' av [javaBin Styret](mailto:styret@java.no).

@@ -64,7 +64,8 @@ $(function () {
                 "javaBin-Stavanger": "Stavanger",
                 "javaBin-Sorlandet": "Sørlandet",
                 "javaBin-Trondheim": "Trondheim",
-                "javaBin-Vestfold": "Vestfold"
+                "javaBin-Vestfold": "Vestfold",
+                "javaBin-Sogn": "Sogn"
             };
 
             var resultsHash = {
@@ -73,7 +74,8 @@ $(function () {
                 "Stavanger": undefined,
                 "Sørlandet": undefined,
                 "Trondheim": undefined,
-                "Vestfold": undefined
+                "Vestfold": undefined,
+                "Sogn": undefined
             };
 
             moment.locale('no');
@@ -85,7 +87,7 @@ $(function () {
                 item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
 
                 var city = "Ukjent region";
-                if(item.venue !== undefined) {
+                if (item.venue !== undefined) {
                     city = item.venue.city;
                 }
 

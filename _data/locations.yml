@@ -47,3 +47,11 @@ regions:
     maps:   "!1m14!1m8!1m3!1d2038.9870725532942!2d10.406024999999998!3d59.26636500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646b7150981637d%3A0x7bbd10ff3e25a6dd!2sPeppes+Pizza+-+T%C3%B8nsberg!5e0!3m2!1sen!2s!4v1399806653430"
     description: "javaBin Vestfold er regionslaget som dekker hovedsaklig Larvik, Sandefjord og Tønsberg."
 
+  - region: Sogn
+    meetupUrl: javaBin-Sogn
+    when:   "på varierende datoer og tidspunkter"
+    where:  "forskjellige lokasjoner"
+#    maps:   "Sogn"
+    maps:   ""
+    description: "javaBin Sogn er regionslaget som dekker Sogn og områdene rundt."
+

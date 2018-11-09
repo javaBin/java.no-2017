@@ -1,16 +1,14 @@
-.board-member {
-    text-align: center;
-    margin-bottom: 50px;
-    & img {
-        margin: 0 auto;
-        border: 7px solid white;
-    }
-    & h4 {
-        margin-top: 25px;
-        margin-bottom: 0;
-        text-transform: none;
-    }
-    & p {
-        margin-top: 0;
+
+.board-members {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    & .board-member {
+        flex: 1 0 21%;
+        text-align: center;
+        & img {
+            height: 200px;
+        }
     }
 }

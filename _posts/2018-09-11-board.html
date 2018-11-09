@@ -1,0 +1,21 @@
+---
+title:  Styret
+cssId:  board
+date:   2018-09-11 12:45
+index:  6
+image:  /img/javaBin_btn_tilWebside_0109_2.svg
+---
+
+<div class="board-members">
+    {% for person in site.data.board.members %}
+        <div class="board-member">
+            <img src="{{ site.baseurl }}/img/javabin/Helteliste/{{ person.img }}" class="img-circle" alt="{{ person.name }}">
+            <h4>
+                {{ person.name }}
+            </h4>
+            <p class="text-muted">
+                {{ person.title }}
+            </p>
+        </div>
+    {% endfor %}
+</div>

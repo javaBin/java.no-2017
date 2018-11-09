@@ -1,79 +1,45 @@
 name: javaBin
 members:
+  - name: Mark West
+    title: Chairman
+    img: mark_west.jpg
+
+  - name: Tannaz Navaie Roshandel
+    title: Deputy Chairman
+    img: tannaz_roshandel.jpg
+
+  - name: Eivind Hyldmo
+    title: Board Member
+    img: silhouette.png
+  
   - name: Rustam Mehmandarov
-    img:  https://placekitten.com/300/300?image=9
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
-
-  - name: Espen Halvorsen
-    img:  https://placekitten.com/300/300?image=1
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
-
-  - name: Bjørn Hamre
-    img:  https://placekitten.com/300/300?image=14
-    region: Bergen
-    twitter:
-    linkedin:
-    github:
+    title: Board Member
+    img: rustam_mehmandarov.jpg
 
   - name: Dervis Mansuroglu
-    img:  https://placekitten.com/300/300?image=9
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
+    title: Board Member
+    img: dervis_mansuroglu.jpg
 
-  - name: Henrik Nordvik
-    img:  https://placekitten.com/300/300?image=8
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
+  - name: Ewa Kabza
+    title: Board Member
+    img: ewa_kabza.jpg
 
-  - name: Marvin Lillehaug
-    img:  https://placekitten.com/300/300?image=10
-    region: Trondheim
-    twitter:
-    linkedin:
-    github:
+  - name: Bjørn Hamre
+    title: Board Member
+    img: bjorn_hamre.jpg
 
-  - name: Stian Nygaard
-    img:  https://placekitten.com/300/300?image=15
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
+  - name: Stian Mikal Nygaard
+    title: Board Member
+    img: stian_mikal_nygaard.jpg
 
-  - name: Sveinung Dalatun
-    img:  https://placekitten.com/300/300?image=14
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
+  - name: Øyvind Løkling
+    title: Board Member
+    img: oyvind_lokling.jpg
 
-  - name: Trygve Laugstøl
-    img:  https://placekitten.com/300/300?image=14
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
+  - name: Marvin Bredal Lillehaug
+    title: Board Member
+    img: marvin_bredal_lillehaug.jpg
 
-    name: Eivind Hyldmo
-    img:  https://placekitten.com/300/300?image=14
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
-
-    name: Ingar Abrahamsen
-    img:  https://placekitten.com/300/300?image=14
-    region: Oslo
-    twitter:
-    linkedin:
-    github:
-
+  - name: Manveer Singh Pandeer
+    title: Board Member
+    img: silhouette.png

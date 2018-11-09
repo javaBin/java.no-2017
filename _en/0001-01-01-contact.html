@@ -10,6 +10,16 @@ image:  /img/javaBin_btn_tilWebside_0109_2.svg
 <div class="row">
     <div class="col-md-12 center-justified">
 
+        <form action="https://formspree.io/styret@java.no" method="POST">
+            <label for="name">Name</label><br/>
+            <input type="text" placeholder="Your name" name="name" id="name"><br/>
+            <label for="email">Email</label><br/>
+            <input type="email" placeholder="Your email" name="email" id="email"><br/>
+            <label for="message">Message</label><br/>
+            <textarea name="message" placeholder="Your message" rows="5" id="message"></textarea><br/>
+            <input type="submit" class="btn btn-primary" value="Send">
+        </form>
+
         <br/>
         {% include social-media.html %}
     </div>

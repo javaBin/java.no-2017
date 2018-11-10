@@ -11,16 +11,15 @@ image:  /img/kart-norge.png
 {% assign index = index | plus: 1 %}
 <div class="row">
     <div class="col-md-12 center-justified">
-        <h3 class="text-muted">
+        <h3>
             {{ region.region }}
         </h3>
         <div>
             <p>{{ region.description }} – <a href="http://www.meetup.com/{{ region.meetupUrl }}">meetup.com/{{ region.meetupUrl }}</a>.</p>
-            <address>
-                <strong class="text-muted">Meetups are organized</strong> {{ region.when }}
-                <strong class="text-muted">at: </strong> {{ region.where }}.
-            </address>
-            <br>
+            <h5>Next meetups</h5>
+            <div id="upcoming-meetups-{{ region.region }}">
+                <p>What about proposing a meetup at <a href="//meetup.com/{{ region.meetupUrl }}">meetup.com</a>?</p>
+            </div>
         </div>
     </div>
 </div>

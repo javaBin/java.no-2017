@@ -14,11 +14,6 @@ pages:
     title: regions
     cssId: regions
 
-  - page: Meetup
-    pageName: meetup.html
-    title: meetup
-    cssId: meetup
-
   - page: Contribute
     pageName: contribute.html
     title: contribute

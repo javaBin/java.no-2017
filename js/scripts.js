@@ -68,52 +68,33 @@ $(function () {
                 "javaBin-Sogn": "Sogn"
             };
 
-            var resultsHash = {
-                "Oslo": undefined,
-                "Bergen": undefined,
-                "Stavanger": undefined,
-                "Sørlandet": undefined,
-                "Trondheim": undefined,
-                "Vestfold": undefined,
-                "Sogn": undefined
-            };
-
             moment.locale('no');
 
-            //console.log(data.results);
-
-            $.each(data.results, function (i, item) {
-
-                item.time = moment(new Date(item.time)).format("dddd, MMMM DD, HH:mm");
-
+            var mapOfRegionsWithEvents = data.results.reduce(function (acc, current) {
                 var city = "Ukjent region";
-                if (item.venue !== undefined) {
-                    city = item.venue.city;
+                if (current.venue !== undefined) {
+                    city = current.venue.city;
                 }
 
-                var index = regionsnavnoverride[item.group.urlname] || city;
+                var index = regionsnavnoverride[current.group.urlname] || city;
 
-                var result = resultsHash[index];
-                if (result === undefined) {
-                    result = [];
+                current.time = moment(new Date(current.time)).format("dddd, MMMM DD, HH:mm");
+
+                (acc[index] = acc[index] || []).push(current);
+                return acc;
+            }, {});
+
+            Object.keys(mapOfRegionsWithEvents).forEach(function (region) {
+                var events = mapOfRegionsWithEvents[region];
+
+                var eventsHtml = events.map(function (prop) {
+                    return "<li><h3><a href='" + prop.event_url + "'>" + prop.name + "</a></h3><p>" + prop.time + "</p></li>"
+                });
+
+                if (eventsHtml.length !== 0) {
+                    $("#upcoming-meetups-" + region).replaceWith("<ul>" + eventsHtml.join("") + "</ul>")
                 }
-
-                result.push(item);
-
-                resultsHash[index] = result;
-
             });
-
-            //console.log(resultsHash);
-
-            if (resultsHash.length <= 0) {
-                return;
-            }
-
-            var template = $.templates("#meetupTemplate");
-            var htmlOutput = template.render(resultsHash);
-
-            $("#replaceMeetupList").replaceWith(htmlOutput);
         },
         beforeSend: setHeaders
     });

@@ -11,8 +11,8 @@ regions:
   - region: Bergen
     meetupUrl: javaBin-Bergen
     when:   "third Thursday each month, 18:00 PM"
-    where:  <a href="https://www.google.no/maps/place/Damsgårdsveien+50,+5058+Bergen">Delfi Data, Damsgårdsveien 50</a>
-    maps:   "!1m18!1m12!1m3!1d1972.0342133675435!2d5.324966016114925!3d60.378594682038205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cf9546c8b5edb%3A0x1442d46174a41f75!2sDamsg%C3%A5rdsveien+50%2C+5058+Bergen!5e0!3m2!1sen!2sno!4v1478280961907"
+    where:  <a href="https://goo.gl/maps/WcKUuyhwDvE2">Ambita, Krinkelkroken 1</a>
+    maps:   ""
     description: "javaBin Bergen is the branch covering Bergen and surrounding areas."
 
   - region: Stavanger
@@ -21,7 +21,7 @@ regions:
     where:  <a href="https://www.google.no/maps/place/Skagen+3,+4006+Stavanger">Skagen 3, 4006 Stavanger</a>
 #    maps:   "SKAGEN Fondene,Skagen 3,Stavanger"
     maps:   "!1m14!1m8!1m3!1d2056.690507996136!2d5.7320269999999995!3d58.97013799999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3549bfac304f%3A0xc23f91d99c7da0b9!2sSKAGEN+Fondene!5e0!3m2!1sen!2s!4v1399806264359"
-    description: "javaBin Stavanger is branch covering Stavanger and surrounding areas."
+    description: "javaBin Stavanger is the branch covering Stavanger and surrounding areas."
 
   - region: Sørlandet
     meetupUrl: javaBin-Sorlandet

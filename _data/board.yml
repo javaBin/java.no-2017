@@ -16,14 +16,6 @@ members:
     title: Styremedlem
     img: dervis_mansuroglu.jpg
 
-  - name: Ewa Maria Kabza
-    title: Styremedlem
-    img: ewa_kabza.jpg
-
-  - name: Bjørn Hamre
-    title: Styremedlem
-    img: bjorn_hamre.jpg
-  
   - name: Stian Mikal Nygaard
     title: Styremedlem
     img: stian_mikal_nygaard.jpg
@@ -32,6 +24,14 @@ members:
     title: Styremedlem
     img: oyvind_lokling.jpg
 
-  - name: Marvin Bredal Lillehaug
+  - name: Erlend Birkenes
     title: Styremedlem
-    img: marvin_bredal_lillehaug.jpg
+    img: erlend_birkenes.jpg
+
+  - name: Kjetil Myhre Ims
+    title: Styremedlem
+    img: kjetil_myhre_ims.jpg
+
+  - name: Alexander Samsig
+    title: Styremedlem
+    img: alexander_samsig.jpg

@@ -16,13 +16,6 @@ members:
     title: Board Member
     img: dervis_mansuroglu.jpg
 
-  - name: Ewa Kabza
-    title: Board Member
-    img: ewa_kabza.jpg
-
-  - name: Bjørn Hamre
-    title: Board Member
-    img: bjorn_hamre.jpg
 
   - name: Stian Mikal Nygaard
     title: Board Member
@@ -31,7 +24,15 @@ members:
   - name: Øyvind Løkling
     title: Board Member
     img: oyvind_lokling.jpg
-
-  - name: Marvin Bredal Lillehaug
+    
+  - name: Erlend Birkenes
     title: Board Member
-    img: marvin_bredal_lillehaug.jpg
+    img: erlend_birkenes.jpg
+
+  - name: Kjetil Myhre Ims
+    title: Board Member
+    img: kjetil_myhre_ims.jpg
+
+  - name: Alexander Samsig
+    title: Board Member
+    img: alexander_samsig.jpg

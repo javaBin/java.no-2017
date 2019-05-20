@@ -7,6 +7,10 @@ members:
   - name: Tannaz Navaie Roshandel
     title: Deputy Chairman
     img: tannaz_roshandel.jpg
+    
+  - name: Eivind Hyldmo
+    title: Financial Controller
+    img: eivind_hyldmo.jpg
 
   - name: Rustam Mehmandarov
     title: Board Member
@@ -16,7 +20,6 @@ members:
     title: Board Member
     img: dervis_mansuroglu.jpg
 
-
   - name: Stian Mikal Nygaard
     title: Board Member
     img: stian_mikal_nygaard.jpg
@@ -24,7 +27,7 @@ members:
   - name: Øyvind Løkling
     title: Board Member
     img: oyvind_lokling.jpg
-    
+
   - name: Erlend Birkenes
     title: Board Member
     img: erlend_birkenes.jpg

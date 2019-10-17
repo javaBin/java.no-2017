@@ -4,17 +4,13 @@ members:
     title: Styreleder
     img: mark_west.jpg
 
-  - name: Tannaz Navaie Roshandel
+  - name: Alexander Samsig
     title: Nestleder
-    img: tannaz_roshandel.jpg
+    img: alexander_samsig.jpg
 
   - name: Eivind Hyldmo
     title: Økonomisjef
     img: eivind_hyldmo.jpg
-
-  - name: Rustam Mehmandarov
-    title: Styremedlem
-    img: rustam_mehmandarov.jpg
 
   - name: Dervis Mansuroglu
     title: Styremedlem
@@ -35,7 +31,3 @@ members:
   - name: Kjetil Myhre Ims
     title: Styremedlem
     img: kjetil_myhre_ims.jpg
-
-  - name: Alexander Samsig
-    title: Styremedlem
-    img: alexander_samsig.jpg

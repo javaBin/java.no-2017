@@ -3,18 +3,14 @@ members:
   - name: Mark West
     title: Chairman
     img: mark_west.jpg
-
-  - name: Tannaz Navaie Roshandel
+    
+  - name: Alexander Samsig
     title: Deputy Chairman
-    img: tannaz_roshandel.jpg
+    img: alexander_samsig.jpg
     
   - name: Eivind Hyldmo
     title: Financial Controller
     img: eivind_hyldmo.jpg
-
-  - name: Rustam Mehmandarov
-    title: Board Member
-    img: rustam_mehmandarov.jpg
 
   - name: Dervis Mansuroglu
     title: Board Member
@@ -35,7 +31,3 @@ members:
   - name: Kjetil Myhre Ims
     title: Board Member
     img: kjetil_myhre_ims.jpg
-
-  - name: Alexander Samsig
-    title: Board Member
-    img: alexander_samsig.jpg

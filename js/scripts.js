@@ -65,7 +65,8 @@ $(function () {
                 "javaBin-Sorlandet": "Sørlandet",
                 "javaBin-Trondheim": "Trondheim",
                 "javaBin-Vestfold": "Vestfold",
-                "javaBin-Sogn": "Sogn"
+                "javaBin-Sogn": "Sogn",
+                "javaBin-Tromso": "Tromsø"
             };
 
             moment.locale('no');

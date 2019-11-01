@@ -54,3 +54,10 @@ regions:
     #    maps:   "Sogn"
     maps:   ""
     description: "javaBin Sogn is the branch covering Sogn and surrounding areas."
+
+  - region: Tromsø
+    meetupUrl: javaBin-Tromso
+    when:   "on varying dates and times"
+    where:  "different locations"
+    maps:   ""
+    description: "javaBin Tromsø is the branch covering Tromsø and surrounding areas."

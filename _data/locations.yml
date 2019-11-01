@@ -55,3 +55,10 @@ regions:
     maps:   ""
     description: "javaBin Sogn er regionslaget som dekker Sogn og områdene rundt."
 
+  - region: Tromsø
+    meetupUrl: javaBin-Tromso
+    when:   "på varierende datoer og tidspunkter"
+    where:  "forskjellige lokasjoner"
+    maps:   ""
+    description: "javaBin Tromsø er regionslaget som dekker Tromsø og områdene rundt."
+

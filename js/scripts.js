@@ -59,7 +59,7 @@ $(function () {
         dataType: "jsonp",
         success: function (data) {
             const regionsnavnoverride = {
-                "javaBin-Oslo": "Oslo",
+                "javaBin": "Oslo",
                 "javaBin-Bergen": "Bergen",
                 "javaBin-Stavanger": "Stavanger",
                 "javaBin-Sorlandet": "Sørlandet",

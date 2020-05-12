@@ -1,16 +1,16 @@
 name: javaBin
 members:
-  - name: Mark West
+  - name: Kjetil Myhre
     title: Chairman
-    img: mark_west.jpg
+    img: kjetil_myhre.jpg
     
   - name: Alexander Samsig
     title: Deputy Chairman
     img: alexander_samsig.jpg
     
-  - name: Eivind Hyldmo
+  - name: Rafael Winterhalter
     title: Financial Controller
-    img: eivind_hyldmo.jpg
+    img: rafael_winterhalter.jpg
 
   - name: Dervis Mansuroglu
     title: Board Member
@@ -28,6 +28,10 @@ members:
     title: Board Member
     img: erlend_birkenes.jpg
 
-  - name: Kjetil Myhre
+  - name: Patricia Zemer
     title: Board Member
-    img: kjetil_myhre.jpg
+    img: patricia_zemer.jpg
+
+  - name: Alexander Svendsen
+    title: Board Member
+    img: alexander_svendsen.jpg

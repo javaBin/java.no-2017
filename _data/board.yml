@@ -1,16 +1,16 @@
 name: javaBin
 members:
-  - name: Mark West
+  - name: Kjetil Myhre
     title: Styreleder
-    img: mark_west.jpg
+    img: kjetil_myhre.jpg
 
   - name: Alexander Samsig
     title: Nestleder
     img: alexander_samsig.jpg
 
-  - name: Eivind Hyldmo
+  - name: Rafael Winterhalter
     title: Økonomisjef
-    img: eivind_hyldmo.jpg
+    img: rafael_winterhalter.jpg
 
   - name: Dervis Mansuroglu
     title: Styremedlem
@@ -28,6 +28,10 @@ members:
     title: Styremedlem
     img: erlend_birkenes.jpg
 
-  - name: Kjetil Myhre
+  - name: Patricia Zemer
     title: Styremedlem
-    img: kjetil_myhre.jpg
+    img: patricia_zemer.jpg
+
+  - name: Alexander Svendsen
+    title: Styremedlem
+    img: alexander_svendsen.jpg

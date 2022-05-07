@@ -3,7 +3,7 @@ regions:
   - region: Oslo
     meetupUrl: javaBin
     when:   "på varierende datoer, kl. 18:00"
-    where:  <a href="https://www.google.no/maps/place/Teknologihuset">Teknologihuset, Pilestredet 56</a>
+    where:  <a href="https://goo.gl/maps/wpaA5nxxHM5ao3Rr9">Teknologihuset, Pilestredet 56</a>
 #    maps:  "Teknologihuset,Pilestredet,Oslo"
     maps:   "!1m14!1m8!1m3!1d1999.5003076945102!2d10.731749!3d59.92383999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e78366969f3%3A0x33b03851acb92609!2sTeknologihuset!5e0!3m2!1sen!2s!4v1399806824690"
     description: "javaBin Oslo arrangerer fagkvelder i Oslo"

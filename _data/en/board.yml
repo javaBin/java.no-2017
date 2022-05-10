@@ -1,32 +1,24 @@
 name: javaBin
 members:
-  - name: Kjetil Myhre
+  - name: Dervis Mansuroglu
     title: Chairman
-    img: kjetil_myhre.jpg
-    
-  - name: Alexander Samsig
+    img: dervis_mansuroglu.jpg
+
+  - name: Kristian Berg
     title: Deputy Chairman
-    img: alexander_samsig.jpg
-    
+    img: kristian_berg.jpg
+
   - name: Rafael Winterhalter
     title: Financial Controller
     img: rafael_winterhalter.jpg
 
-  - name: Dervis Mansuroglu
+  - name: Alexander Samsig
     title: Board Member
-    img: dervis_mansuroglu.jpg
-
-  - name: Stian Mikal Nygaard
-    title: Board Member
-    img: stian_mikal_nygaard.jpg
+    img: alexander_samsig.jpg
 
   - name: Karl Syvert Løland
     title: Board Member
     img: karl_syvert_loland.jpg
-
-  - name: Kristian Berg
-    title: Board Member
-    img: kristian_berg.jpg
 
   - name: Patricia Zemer
     title: Board Member
@@ -35,3 +27,11 @@ members:
   - name: Alexander Svendsen
     title: Board Member
     img: alexander_svendsen.jpg
+
+  - name: Sverre Moe
+    title: Board Member
+    img: sverre_moe.jpg
+
+  - name: Dorna Misaghian
+    title: Board Member
+    img: dorna_misaghian.jpg

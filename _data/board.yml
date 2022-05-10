@@ -1,32 +1,24 @@
 name: javaBin
 members:
-  - name: Kjetil Myhre
+  - name: Dervis Mansuroglu
     title: Styreleder
-    img: kjetil_myhre.jpg
+    img: dervis_mansuroglu.jpg
 
-  - name: Alexander Samsig
+  - name: Kristian Berg
     title: Nestleder
-    img: alexander_samsig.jpg
+    img: kristian_berg.jpg
 
   - name: Rafael Winterhalter
     title: Økonomisjef
     img: rafael_winterhalter.jpg
 
-  - name: Dervis Mansuroglu
+  - name: Alexander Samsig
     title: Styremedlem
-    img: dervis_mansuroglu.jpg
-
-  - name: Stian Mikal Nygaard
-    title: Styremedlem
-    img: stian_mikal_nygaard.jpg
+    img: alexander_samsig.jpg
 
   - name: Karl Syvert Løland
     title: Styremedlem
     img: karl_syvert_loland.jpg
-
-  - name: Kristian Berg
-    title: Styremedlem
-    img: kristian_berg.jpg
 
   - name: Patricia Zemer
     title: Styremedlem
@@ -35,3 +27,11 @@ members:
   - name: Alexander Svendsen
     title: Styremedlem
     img: alexander_svendsen.jpg
+
+  - name: Sverre Moe
+    title: Styremedlem
+    img: sverre_moe.jpg
+
+  - name: Dorna Misaghian
+    title: Styremedlem
+    img: dorna_misaghian.jpg
